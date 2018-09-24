@@ -1,0 +1,299 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\UsbControl.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_USBCONTROL_DIALOG DIALOGEX 0, 0, 490, 345
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION " "
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Search",IDC_BTN_SEARCH,23,9,33,30
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,57,9,33,30
+    PUSHBUTTON      "VideoCap",IDC_BTN_VIDEOCAPTURE,91,9,33,30
+    PUSHBUTTON      "StopCap",IDC_BTN_STOPCAPTURE,125,9,33,30
+    PUSHBUTTON      "CloseCon",IDC_BTN_CLOSECON,158,9,33,30
+    PUSHBUTTON      "SnapShot",IDC_BTN_SNAP,191,9,33,30,NOT WS_VISIBLE
+    LISTBOX         IDC_LIST1,17,46,206,77,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_IPADDRESS_CAM,"SysIPAddress32",WS_TABSTOP,170,176,100,15
+    CONTROL         "",IDC_IPADDRESS_SUBNET,"SysIPAddress32",WS_TABSTOP,170,195,99,15
+    CONTROL         "",IDC_IPADDRESS_GATE,"SysIPAddress32",WS_TABSTOP,170,213,99,15
+    PUSHBUTTON      "SetIP",IDC_BUTTON_SETIP,191,139,50,14
+    COMBOBOX        IDC_COMBO_TRIG,50,254,45,33,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TrigFreq,102,254,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "set",IDC_BUTTON_SENDgain2,154,254,17,14
+    PUSHBUTTON      "softTrig",IDC_BTN_TRIG,175,254,29,14
+    CONTROL         "AutoGain",IDC_CHECK_Gain,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,273,45,10
+    EDITTEXT        IDC_EDIT_GAIN,102,273,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "set",IDC_BUTTON_SENDgain,154,273,50,14
+    CONTROL         "AutoExpo",IDC_CHECK_EXPO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,290,47,10
+    EDITTEXT        IDC_EDIT_EXPO,102,290,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "set",IDC_BUTTON_SENDexpo,154,290,50,14
+    COMBOBOX        IDC_COMBO_CHANNEL,234,22,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "SaveFile",IDC_CHECK_SAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,292,22,42,10
+    CONTROL         "Normal",IDC_RADIO_NORMAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,294,147,37,10
+    CONTROL         "Xmirror",IDC_RADIO_XMIRROR,"Button",BS_AUTORADIOBUTTON,330,147,38,10
+    CONTROL         "Ymirror",IDC_RADIO_YMIRROR,"Button",BS_AUTORADIOBUTTON,294,165,38,10
+    CONTROL         "XYmirror",IDC_RADIO_XYMIRROR,"Button",BS_AUTORADIOBUTTON,330,165,42,10
+    EDITTEXT        IDC_EDIT_rgain,312,208,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ggain,375,208,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_bgain,312,224,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ggain2,375,225,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_BTN_roiset,416,301,33,14
+    EDITTEXT        IDC_EDIT_regaddr,389,153,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_regdata,443,151,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "R",IDC_BTNregread,395,172,25,14
+    PUSHBUTTON      "W",IDC_BTNregwrite,451,173,25,14
+    PUSHBUTTON      "eeW",IDC_BTNW,447,124,25,14
+    LTEXT           "Data",IDC_STATIC,454,141,21,8
+    LTEXT           "",IDC_STATIC_TEXT,248,51,216,64
+    GROUPBOX        "Status",IDC_STATIC,240,41,231,83
+    GROUPBOX        "ProcType",IDC_STATIC,287,134,87,50
+    GROUPBOX        "WBCtrl",IDC_STATIC,284,192,156,56
+    LTEXT           "SelectChannel",IDC_STATIC,233,10,46,8
+    LTEXT           "CamIP",IDC_STATIC,13,182,23,8
+    LTEXT           "SubNet",IDC_STATIC,13,201,31,8,0,WS_EX_TRANSPARENT
+    LTEXT           "G1",IDC_STATIC_PACK,364,208,12,8
+    LTEXT           "R",IDC_STATIC,300,208,12,8
+    LTEXT           "Trig mode",IDC_STATIC_TRIG,15,254,36,8
+    LTEXT           "Expo",IDC_STATIC,15,290,19,8
+    LTEXT           "Gain",IDC_STATIC,15,273,14,8
+    LTEXT           "B",IDC_STATIC,300,224,12,8
+    LTEXT           "Gateway",IDC_STATIC,13,218,31,8
+    GROUPBOX        "EthCtrl",IDC_STATIC,3,131,273,105
+    GROUPBOX        "ImgCtrl",IDC_static_imgctrl,3,242,219,87
+    LTEXT           "G2",IDC_STATIC_PACK2,364,226,12,8
+    LTEXT           "Addr",IDC_STATIC,403,141,21,8
+    EDITTEXT        IDC_EDIT_camsize,102,306,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "set",IDC_BUTTON_SENDcamsize,154,306,50,14
+    LTEXT           "Camera Num",IDC_STATIC,7,307,62,8
+    EDITTEXT        IDC_EDIT_roixstart,304,269,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_roixend,356,269,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_roiystart,305,301,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_roiyend,357,301,40,14,ES_AUTOHSCROLL
+    CONTROL         "Enable",IDC_CHECK_roienable,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,416,270,35,10
+    CONTROL         "binning",IDC_CHECK_binning,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,266,38,10
+    CONTROL         "skip",IDC_CHECK_skip,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,281,28,10
+    PUSHBUTTON      "Set",IDC_BTN_WBSet2,422,222,17,14
+    LTEXT           "x",IDC_STATIC,292,272,12,8
+    LTEXT           "y",IDC_STATIC,294,307,12,8
+    LTEXT           "start",IDC_STATIC,316,258,21,8
+    LTEXT           "end",IDC_STATIC,372,258,12,8
+    GROUPBOX        "ROI",IDC_STATIC,287,253,164,67
+    CONTROL         "",IDC_IPADDRESS_PCIP,"SysIPAddress32",WS_DISABLED | WS_TABSTOP,170,155,100,15
+    LTEXT           "PC IP",IDC_STATIC,13,162,23,8
+    PUSHBUTTON      "ForceIP",IDC_BUTTON_ForceIp,89,139,50,14
+    CONTROL         "",IDC_IPADDRESS_CAM3,"SysIPAddress32",WS_TABSTOP,55,177,100,15
+    CONTROL         "",IDC_IPADDRESS_SUBNET2,"SysIPAddress32",WS_TABSTOP,55,196,99,15
+    CONTROL         "",IDC_IPADDRESS_GATE2,"SysIPAddress32",WS_TABSTOP,55,214,99,15
+    CONTROL         "",IDC_IPADDRESS_PCIP2,"SysIPAddress32",WS_DISABLED | WS_TABSTOP,55,156,100,15
+    PUSHBUTTON      "test",btn_test,330,21,21,14,NOT WS_VISIBLE
+    PUSHBUTTON      "softTrigTimer",IDC_BTN_TRIG2,329,5,47,14
+END
+
+IDD_DLG_VIDEO DIALOGEX 0, 0, 349, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Video"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STC_VIDEO,"Static",SS_BLACKFRAME,7,7,335,204
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,3
+ PRODUCTVERSION 2,0,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "CCHV"
+            VALUE "FileDescription", "GigeCam"
+            VALUE "FileVersion", "1.5"
+            VALUE "InternalName", "GigeCam"
+            VALUE "OriginalFilename", "GigeCam"
+            VALUE "ProductVersion", "2.0.0.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_USBCONTROL_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 487
+        BOTTOMMARGIN, 336
+    END
+
+    IDD_DLG_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_USBCONTROL_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "about GigeCam..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

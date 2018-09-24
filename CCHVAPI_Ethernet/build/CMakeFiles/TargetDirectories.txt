@@ -1,0 +1,1 @@
+/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles/gigecam.dir

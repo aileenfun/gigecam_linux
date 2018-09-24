@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/CCHVAPI_Ethernet/CCHVAPI/",
+                "${workspaceFolder}/CCHVAPI_Ethernet/CCHVAPI/Inc/",
+                "${workspaceFolder}/CCHVAPI_Ethernet/CCHVAPI/Inc/MV_CrossPlatform"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

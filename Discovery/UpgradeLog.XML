@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="UsbControl">
+</Property><Property Name="Solution File" Value="Q:\github\vs2010\UsbControl\UsbControl.sln">
+</Property><Property Name="Date" Value="2017年3月27日">
+</Property><Property Name="Time" Value="22:16">
+</Property></Properties><Event ErrorLevel="0" Project="UsbControl" Source="UsbControl\UsbControl.vcproj" Description="Converting project file 'Q:\github\vs2010\UsbControl\UsbControl\UsbControl.vcproj'.">
+</Event><Event ErrorLevel="0" Project="UsbControl" Source="UsbControl\opencv.vsprops" Description="Converting propertysheet file 'Q:\github\vs2010\UsbControl\UsbControl\opencv.vsprops' for configuration 'Debug|Win32'.">
+</Event><Event ErrorLevel="1" Project="UsbControl" Source="UsbControl\opencv.vsprops" Description="Attribute 'ProjectType' of 'opencv' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="UsbControl" Source="UsbControl\opencv.vsprops" Description="Attribute 'Version' of 'opencv' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="UsbControl" Source="UsbControl\opencv.vsprops" Description="Done converting to new property sheet file 'Q:\github\vs2010\UsbControl\UsbControl\opencv.vsprops' for configuration 'Debug|Win32'.">
+</Event><Event ErrorLevel="3" Project="UsbControl" Source="UsbControl\opencv.vsprops" Description="Converted">
+</Event><Event ErrorLevel="1" Project="UsbControl" Source="UsbControl\UsbControl.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="UsbControl" Source="UsbControl\opencv.vsprops" Description="Converting propertysheet file 'Q:\github\vs2010\UsbControl\UsbControl\opencv.vsprops' for configuration 'Release|Win32'.">
+</Event><Event ErrorLevel="0" Project="UsbControl" Source="UsbControl\opencv.vsprops" Description="Done converting to new property sheet file 'Q:\github\vs2010\UsbControl\UsbControl\opencv.vsprops' for configuration 'Release|Win32'.">
+</Event><Event ErrorLevel="0" Project="UsbControl" Source="UsbControl\UsbControl.vcproj" Description="Done converting to new project file 'Q:\github\vs2010\UsbControl\UsbControl\UsbControl.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="UsbControl" Source="UsbControl\UsbControl.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CCTAPI" Source="..\CCTAPI\CCTAPI\CCTAPI.vcproj" Description="Converting project file 'Q:\github\vs2010\CCTAPI\CCTAPI\CCTAPI.vcproj'.">
+</Event><Event ErrorLevel="1" Project="CCTAPI" Source="..\CCTAPI\CCTAPI\CCTAPI.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="CCTAPI" Source="..\CCTAPI\CCTAPI\CCTAPI.vcproj" Description="Done converting to new project file 'Q:\github\vs2010\CCTAPI\CCTAPI\CCTAPI.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="CCTAPI" Source="..\CCTAPI\CCTAPI\CCTAPI.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="UsbControl.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="UsbControl.sln" Description="Converted">
+</Event></UpgradeLog>
