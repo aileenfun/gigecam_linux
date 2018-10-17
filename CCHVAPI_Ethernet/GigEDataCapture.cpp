@@ -85,7 +85,7 @@ int GigECDataCapture::Open(int height, int width)//
 	}
 	usleep(1000);
 
-	pthread_create(&m_hPack2FrameThread,NULL,pack2FrameThreadAdapter,NULL);
+	pthread_create(&m_hPack2FrameThread,NULL,pack2FrameThreadAdapter,this);
 	//int temp = SetThreadPriority(m_hThread, THREAD_PRIORITY_TIME_CRITICAL);
 #ifdef _SAVEFILE
 	std::stringstream ss2;
@@ -390,7 +390,7 @@ void GigECDataCapture::pack2FrameThreadFunc()
 	//bool temp=SetThreadPriority(m_hThread1,THREAD_PRIORITY_TIME_CRITICAL);
 
 #else
-	 pthread_create(&m_hGetUdpThread,NULL,getUdpDataThreadAdapter,NULL);
+	 pthread_create(&m_hGetUdpThread,NULL,getUdpDataThreadAdapter,this);
 	//int temp = SetThreadPriority(m_hThread1, THREAD_PRIORITY_TIME_CRITICAL);
 	sendto(socketSrv, tempbuf, 10, 0, (struct sockaddr*)&addrClient, sizeof(struct sockaddr));
 	nRet = getData(m_pInData, 0, ReadDataBytes);
@@ -403,10 +403,10 @@ void GigECDataCapture::pack2FrameThreadFunc()
 	thisImgFrame = NULL;
 	volatile bool head = FALSE;
 	int lastRowIdx = 0;
-	GigEudp_buffer* this_udp_pack = NULL;
+	volatile GigEudp_buffer* this_udp_pack = NULL;
 	byte* temppack;
 	unsigned long packnum_last = 0;
-	unsigned long packnum = 0;
+	volatile unsigned long packnum = 0;
 	unsigned long timestamp_last = 0;
 	unsigned long cpylen = 0;
 	vector<GigEimgFrame*> vframe;
@@ -474,9 +474,10 @@ void GigECDataCapture::pack2FrameThreadFunc()
 				head = true;
 			}
 		}
-
+//normal pack
 		if (head && (this_udp_pack->packbuffer[0] != 0x30))//((this_udp_pack->packbuffer[0]==0x33)||(this_udp_pack->packbuffer[0]==0x34)||(this_udp_pack->packbuffer[0]==0x3f)))
 		{
+			//pack check
 			camNum = this_udp_pack->packbuffer[2];
 
 			timestamp = this_udp_pack->packbuffer[3] << 16;
@@ -507,6 +508,8 @@ void GigECDataCapture::pack2FrameThreadFunc()
 				f_errorpack = true;
 				goto CLEANUP;
 			}
+			//pack check end
+
 			//house keeping
 			while (vframe.size() > 10)
 			{
@@ -537,9 +540,16 @@ void GigECDataCapture::pack2FrameThreadFunc()
 							int k = 0;
 						}
 						vframe[i]->packnum++;
-						packnum = this_udp_pack->packbuffer[10];
-						packnum = packnum << 8;
-						packnum += (unsigned int)this_udp_pack->packbuffer[11] - 1;
+						//packnum = this_udp_pack->packbuffer[10];
+						//packnum = packnum << 8;
+						//packnum += (unsigned int)this_udp_pack->packbuffer[11] - 1;
+						packnum=packnum-1;
+						if ((packnum>TOTALPACK))
+						{
+							haveerror++;
+							f_errorpack = true;
+							goto CLEANUP;
+						}
 						if (packnum == TOTALPACK - 1 && this_udp_pack->m_packsize > residue)
 						{
 							haveerror++;

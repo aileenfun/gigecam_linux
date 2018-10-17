@@ -1,11 +1,12 @@
 // -*- coding: gb2312-dos -*-
-#include "stdafx.h"
 #include <stdlib.h>
 #include "MV_CrossPlatform.h"
+#include <string.h>
+#ifdef _kkk
 
 #define IS_2_POW_N(X)   (((X)&(X-1)) == 0)
 
-// ¶ÔÆëÉêÇëÄÚ´æ
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½
 void*   MV_Aligned_Malloc(unsigned int size , unsigned int alignment)
 {
     unsigned int ptr, r_ptr;
@@ -29,7 +30,7 @@ void*   MV_Aligned_Malloc(unsigned int size , unsigned int alignment)
 }
 
 
-// ¶ÔÆëÊÍ·ÅÄÚ´æ
+// ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½Ú´ï¿½
 void    MV_Aligned_Free(void* memblock)
 {
     try
@@ -55,12 +56,12 @@ void    MV_Aligned_Free(void* memblock)
 }
 
 /** @fn     MV_RellocBufferAdapt(unsigned char** ppBuf, unsigned int nDataLen, unsigned int* pnSize)
- *  @brief  ×ÔÊÊÓ¦·ÖÅä»º´æ
- *  @param  ppBuf           [IN][OUT]   - ´ý·ÖÅä»º´æµÄÖ¸Õë
- nDataLen        [IN]        - ¼Æ»®·ÖÅäµÄ´óÐ¡
- pnSize          [IN][OUT]   - Ô­»º´æ´óÐ¡
+ *  @brief  ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ä»ºï¿½ï¿½
+ *  @param  ppBuf           [IN][OUT]   - ï¿½ï¿½ï¿½ï¿½ï¿½ä»ºï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
+ nDataLen        [IN]        - ï¿½Æ»ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½Ð¡
+ pnSize          [IN][OUT]   - Ô­ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡
  *
- *  @return ³É¹¦£¬·µ»ØIMGPROC_OK£»Ê§°Ü£¬·µ»Ø´íÎóÂë
+ *  @return ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½IMGPROC_OKï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 int     MV_RellocBufferAdapt(unsigned char** ppBuf, unsigned int nDataLen, unsigned int* pnSize)
 {
@@ -93,3 +94,4 @@ int     MV_RellocBufferAdapt(unsigned char** ppBuf, unsigned int nDataLen, unsig
 
     return 0;
 }
+#endif

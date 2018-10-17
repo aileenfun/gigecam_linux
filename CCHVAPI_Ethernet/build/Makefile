@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI
+CMAKE_SOURCE_DIR = /home/hyf/gigecam_linux/CCHVAPI_Ethernet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build
+CMAKE_BINARY_DIR = /home/hyf/gigecam_linux/CCHVAPI_Ethernet/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hyf/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles /home/hyf/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hyf/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -99,24 +99,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named gigecam
+# Target rules for targets named discovery
 
 # Build rule for target.
-gigecam: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gigecam
-.PHONY : gigecam
+discovery: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 discovery
+.PHONY : discovery
 
 # fast build rule for target.
-gigecam/fast:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/build
-.PHONY : gigecam/fast
+discovery/fast:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/build
+.PHONY : discovery/fast
 
 CCHVAPI.o: CCHVAPI.cpp.o
 .PHONY : CCHVAPI.o
 
 # target to build an object file
 CCHVAPI.cpp.o:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/CCHVAPI.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/CCHVAPI.cpp.o
 .PHONY : CCHVAPI.cpp.o
 
 CCHVAPI.i: CCHVAPI.cpp.i
@@ -124,7 +124,7 @@ CCHVAPI.i: CCHVAPI.cpp.i
 
 # target to preprocess a source file
 CCHVAPI.cpp.i:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/CCHVAPI.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/CCHVAPI.cpp.i
 .PHONY : CCHVAPI.cpp.i
 
 CCHVAPI.s: CCHVAPI.cpp.s
@@ -132,7 +132,7 @@ CCHVAPI.s: CCHVAPI.cpp.s
 
 # target to generate assembly for a file
 CCHVAPI.cpp.s:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/CCHVAPI.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/CCHVAPI.cpp.s
 .PHONY : CCHVAPI.cpp.s
 
 DeviceGVCP.o: DeviceGVCP.cpp.o
@@ -140,7 +140,7 @@ DeviceGVCP.o: DeviceGVCP.cpp.o
 
 # target to build an object file
 DeviceGVCP.cpp.o:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/DeviceGVCP.cpp.o
 .PHONY : DeviceGVCP.cpp.o
 
 DeviceGVCP.i: DeviceGVCP.cpp.i
@@ -148,7 +148,7 @@ DeviceGVCP.i: DeviceGVCP.cpp.i
 
 # target to preprocess a source file
 DeviceGVCP.cpp.i:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/DeviceGVCP.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/DeviceGVCP.cpp.i
 .PHONY : DeviceGVCP.cpp.i
 
 DeviceGVCP.s: DeviceGVCP.cpp.s
@@ -156,7 +156,7 @@ DeviceGVCP.s: DeviceGVCP.cpp.s
 
 # target to generate assembly for a file
 DeviceGVCP.cpp.s:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/DeviceGVCP.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/DeviceGVCP.cpp.s
 .PHONY : DeviceGVCP.cpp.s
 
 GigEDataCapture.o: GigEDataCapture.cpp.o
@@ -164,7 +164,7 @@ GigEDataCapture.o: GigEDataCapture.cpp.o
 
 # target to build an object file
 GigEDataCapture.cpp.o:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataCapture.cpp.o
 .PHONY : GigEDataCapture.cpp.o
 
 GigEDataCapture.i: GigEDataCapture.cpp.i
@@ -172,7 +172,7 @@ GigEDataCapture.i: GigEDataCapture.cpp.i
 
 # target to preprocess a source file
 GigEDataCapture.cpp.i:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/GigEDataCapture.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataCapture.cpp.i
 .PHONY : GigEDataCapture.cpp.i
 
 GigEDataCapture.s: GigEDataCapture.cpp.s
@@ -180,7 +180,7 @@ GigEDataCapture.s: GigEDataCapture.cpp.s
 
 # target to generate assembly for a file
 GigEDataCapture.cpp.s:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/GigEDataCapture.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataCapture.cpp.s
 .PHONY : GigEDataCapture.cpp.s
 
 GigEDataProcess.o: GigEDataProcess.cpp.o
@@ -188,7 +188,7 @@ GigEDataProcess.o: GigEDataProcess.cpp.o
 
 # target to build an object file
 GigEDataProcess.cpp.o:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataProcess.cpp.o
 .PHONY : GigEDataProcess.cpp.o
 
 GigEDataProcess.i: GigEDataProcess.cpp.i
@@ -196,7 +196,7 @@ GigEDataProcess.i: GigEDataProcess.cpp.i
 
 # target to preprocess a source file
 GigEDataProcess.cpp.i:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/GigEDataProcess.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataProcess.cpp.i
 .PHONY : GigEDataProcess.cpp.i
 
 GigEDataProcess.s: GigEDataProcess.cpp.s
@@ -204,15 +204,183 @@ GigEDataProcess.s: GigEDataProcess.cpp.s
 
 # target to generate assembly for a file
 GigEDataProcess.cpp.s:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/GigEDataProcess.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataProcess.cpp.s
 .PHONY : GigEDataProcess.cpp.s
+
+Inc/MV_CrossPlatform/Linux_Thread.o: Inc/MV_CrossPlatform/Linux_Thread.cpp.o
+.PHONY : Inc/MV_CrossPlatform/Linux_Thread.o
+
+# target to build an object file
+Inc/MV_CrossPlatform/Linux_Thread.cpp.o:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.o
+.PHONY : Inc/MV_CrossPlatform/Linux_Thread.cpp.o
+
+Inc/MV_CrossPlatform/Linux_Thread.i: Inc/MV_CrossPlatform/Linux_Thread.cpp.i
+.PHONY : Inc/MV_CrossPlatform/Linux_Thread.i
+
+# target to preprocess a source file
+Inc/MV_CrossPlatform/Linux_Thread.cpp.i:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.i
+.PHONY : Inc/MV_CrossPlatform/Linux_Thread.cpp.i
+
+Inc/MV_CrossPlatform/Linux_Thread.s: Inc/MV_CrossPlatform/Linux_Thread.cpp.s
+.PHONY : Inc/MV_CrossPlatform/Linux_Thread.s
+
+# target to generate assembly for a file
+Inc/MV_CrossPlatform/Linux_Thread.cpp.s:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.s
+.PHONY : Inc/MV_CrossPlatform/Linux_Thread.cpp.s
+
+Inc/MV_CrossPlatform/MV_Log.o: Inc/MV_CrossPlatform/MV_Log.cpp.o
+.PHONY : Inc/MV_CrossPlatform/MV_Log.o
+
+# target to build an object file
+Inc/MV_CrossPlatform/MV_Log.cpp.o:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Log.cpp.o
+.PHONY : Inc/MV_CrossPlatform/MV_Log.cpp.o
+
+Inc/MV_CrossPlatform/MV_Log.i: Inc/MV_CrossPlatform/MV_Log.cpp.i
+.PHONY : Inc/MV_CrossPlatform/MV_Log.i
+
+# target to preprocess a source file
+Inc/MV_CrossPlatform/MV_Log.cpp.i:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Log.cpp.i
+.PHONY : Inc/MV_CrossPlatform/MV_Log.cpp.i
+
+Inc/MV_CrossPlatform/MV_Log.s: Inc/MV_CrossPlatform/MV_Log.cpp.s
+.PHONY : Inc/MV_CrossPlatform/MV_Log.s
+
+# target to generate assembly for a file
+Inc/MV_CrossPlatform/MV_Log.cpp.s:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Log.cpp.s
+.PHONY : Inc/MV_CrossPlatform/MV_Log.cpp.s
+
+Inc/MV_CrossPlatform/MV_Memory.o: Inc/MV_CrossPlatform/MV_Memory.cpp.o
+.PHONY : Inc/MV_CrossPlatform/MV_Memory.o
+
+# target to build an object file
+Inc/MV_CrossPlatform/MV_Memory.cpp.o:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.o
+.PHONY : Inc/MV_CrossPlatform/MV_Memory.cpp.o
+
+Inc/MV_CrossPlatform/MV_Memory.i: Inc/MV_CrossPlatform/MV_Memory.cpp.i
+.PHONY : Inc/MV_CrossPlatform/MV_Memory.i
+
+# target to preprocess a source file
+Inc/MV_CrossPlatform/MV_Memory.cpp.i:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.i
+.PHONY : Inc/MV_CrossPlatform/MV_Memory.cpp.i
+
+Inc/MV_CrossPlatform/MV_Memory.s: Inc/MV_CrossPlatform/MV_Memory.cpp.s
+.PHONY : Inc/MV_CrossPlatform/MV_Memory.s
+
+# target to generate assembly for a file
+Inc/MV_CrossPlatform/MV_Memory.cpp.s:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.s
+.PHONY : Inc/MV_CrossPlatform/MV_Memory.cpp.s
+
+Inc/MV_CrossPlatform/MV_Thread.o: Inc/MV_CrossPlatform/MV_Thread.cpp.o
+.PHONY : Inc/MV_CrossPlatform/MV_Thread.o
+
+# target to build an object file
+Inc/MV_CrossPlatform/MV_Thread.cpp.o:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.o
+.PHONY : Inc/MV_CrossPlatform/MV_Thread.cpp.o
+
+Inc/MV_CrossPlatform/MV_Thread.i: Inc/MV_CrossPlatform/MV_Thread.cpp.i
+.PHONY : Inc/MV_CrossPlatform/MV_Thread.i
+
+# target to preprocess a source file
+Inc/MV_CrossPlatform/MV_Thread.cpp.i:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.i
+.PHONY : Inc/MV_CrossPlatform/MV_Thread.cpp.i
+
+Inc/MV_CrossPlatform/MV_Thread.s: Inc/MV_CrossPlatform/MV_Thread.cpp.s
+.PHONY : Inc/MV_CrossPlatform/MV_Thread.s
+
+# target to generate assembly for a file
+Inc/MV_CrossPlatform/MV_Thread.cpp.s:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.s
+.PHONY : Inc/MV_CrossPlatform/MV_Thread.cpp.s
+
+Inc/MV_CrossPlatform/MV_Tools.o: Inc/MV_CrossPlatform/MV_Tools.cpp.o
+.PHONY : Inc/MV_CrossPlatform/MV_Tools.o
+
+# target to build an object file
+Inc/MV_CrossPlatform/MV_Tools.cpp.o:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.o
+.PHONY : Inc/MV_CrossPlatform/MV_Tools.cpp.o
+
+Inc/MV_CrossPlatform/MV_Tools.i: Inc/MV_CrossPlatform/MV_Tools.cpp.i
+.PHONY : Inc/MV_CrossPlatform/MV_Tools.i
+
+# target to preprocess a source file
+Inc/MV_CrossPlatform/MV_Tools.cpp.i:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.i
+.PHONY : Inc/MV_CrossPlatform/MV_Tools.cpp.i
+
+Inc/MV_CrossPlatform/MV_Tools.s: Inc/MV_CrossPlatform/MV_Tools.cpp.s
+.PHONY : Inc/MV_CrossPlatform/MV_Tools.s
+
+# target to generate assembly for a file
+Inc/MV_CrossPlatform/MV_Tools.cpp.s:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.s
+.PHONY : Inc/MV_CrossPlatform/MV_Tools.cpp.s
+
+Inc/MV_CrossPlatform/Windows_Thread.o: Inc/MV_CrossPlatform/Windows_Thread.cpp.o
+.PHONY : Inc/MV_CrossPlatform/Windows_Thread.o
+
+# target to build an object file
+Inc/MV_CrossPlatform/Windows_Thread.cpp.o:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.o
+.PHONY : Inc/MV_CrossPlatform/Windows_Thread.cpp.o
+
+Inc/MV_CrossPlatform/Windows_Thread.i: Inc/MV_CrossPlatform/Windows_Thread.cpp.i
+.PHONY : Inc/MV_CrossPlatform/Windows_Thread.i
+
+# target to preprocess a source file
+Inc/MV_CrossPlatform/Windows_Thread.cpp.i:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.i
+.PHONY : Inc/MV_CrossPlatform/Windows_Thread.cpp.i
+
+Inc/MV_CrossPlatform/Windows_Thread.s: Inc/MV_CrossPlatform/Windows_Thread.cpp.s
+.PHONY : Inc/MV_CrossPlatform/Windows_Thread.s
+
+# target to generate assembly for a file
+Inc/MV_CrossPlatform/Windows_Thread.cpp.s:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.s
+.PHONY : Inc/MV_CrossPlatform/Windows_Thread.cpp.s
+
+Inc/Socket/Socket.o: Inc/Socket/Socket.cpp.o
+.PHONY : Inc/Socket/Socket.o
+
+# target to build an object file
+Inc/Socket/Socket.cpp.o:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o
+.PHONY : Inc/Socket/Socket.cpp.o
+
+Inc/Socket/Socket.i: Inc/Socket/Socket.cpp.i
+.PHONY : Inc/Socket/Socket.i
+
+# target to preprocess a source file
+Inc/Socket/Socket.cpp.i:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.i
+.PHONY : Inc/Socket/Socket.cpp.i
+
+Inc/Socket/Socket.s: Inc/Socket/Socket.cpp.s
+.PHONY : Inc/Socket/Socket.s
+
+# target to generate assembly for a file
+Inc/Socket/Socket.cpp.s:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.s
+.PHONY : Inc/Socket/Socket.cpp.s
 
 TrigImgPack.o: TrigImgPack.cpp.o
 .PHONY : TrigImgPack.o
 
 # target to build an object file
 TrigImgPack.cpp.o:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/TrigImgPack.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/TrigImgPack.cpp.o
 .PHONY : TrigImgPack.cpp.o
 
 TrigImgPack.i: TrigImgPack.cpp.i
@@ -220,7 +388,7 @@ TrigImgPack.i: TrigImgPack.cpp.i
 
 # target to preprocess a source file
 TrigImgPack.cpp.i:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/TrigImgPack.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/TrigImgPack.cpp.i
 .PHONY : TrigImgPack.cpp.i
 
 TrigImgPack.s: TrigImgPack.cpp.s
@@ -228,7 +396,7 @@ TrigImgPack.s: TrigImgPack.cpp.s
 
 # target to generate assembly for a file
 TrigImgPack.cpp.s:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/TrigImgPack.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/TrigImgPack.cpp.s
 .PHONY : TrigImgPack.cpp.s
 
 camProp.o: camProp.cpp.o
@@ -236,7 +404,7 @@ camProp.o: camProp.cpp.o
 
 # target to build an object file
 camProp.cpp.o:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/camProp.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/camProp.cpp.o
 .PHONY : camProp.cpp.o
 
 camProp.i: camProp.cpp.i
@@ -244,7 +412,7 @@ camProp.i: camProp.cpp.i
 
 # target to preprocess a source file
 camProp.cpp.i:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/camProp.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/camProp.cpp.i
 .PHONY : camProp.cpp.i
 
 camProp.s: camProp.cpp.s
@@ -252,7 +420,7 @@ camProp.s: camProp.cpp.s
 
 # target to generate assembly for a file
 camProp.cpp.s:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/camProp.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/camProp.cpp.s
 .PHONY : camProp.cpp.s
 
 clientProp.o: clientProp.cpp.o
@@ -260,7 +428,7 @@ clientProp.o: clientProp.cpp.o
 
 # target to build an object file
 clientProp.cpp.o:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/clientProp.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/clientProp.cpp.o
 .PHONY : clientProp.cpp.o
 
 clientProp.i: clientProp.cpp.i
@@ -268,7 +436,7 @@ clientProp.i: clientProp.cpp.i
 
 # target to preprocess a source file
 clientProp.cpp.i:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/clientProp.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/clientProp.cpp.i
 .PHONY : clientProp.cpp.i
 
 clientProp.s: clientProp.cpp.s
@@ -276,15 +444,39 @@ clientProp.s: clientProp.cpp.s
 
 # target to generate assembly for a file
 clientProp.cpp.s:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/clientProp.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/clientProp.cpp.s
 .PHONY : clientProp.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 wqueue.o: wqueue.cpp.o
 .PHONY : wqueue.o
 
 # target to build an object file
 wqueue.cpp.o:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/wqueue.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/wqueue.cpp.o
 .PHONY : wqueue.cpp.o
 
 wqueue.i: wqueue.cpp.i
@@ -292,7 +484,7 @@ wqueue.i: wqueue.cpp.i
 
 # target to preprocess a source file
 wqueue.cpp.i:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/wqueue.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/wqueue.cpp.i
 .PHONY : wqueue.cpp.i
 
 wqueue.s: wqueue.cpp.s
@@ -300,7 +492,7 @@ wqueue.s: wqueue.cpp.s
 
 # target to generate assembly for a file
 wqueue.cpp.s:
-	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/wqueue.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/wqueue.cpp.s
 .PHONY : wqueue.cpp.s
 
 # Help Target
@@ -309,8 +501,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... discovery"
 	@echo "... edit_cache"
-	@echo "... gigecam"
 	@echo "... rebuild_cache"
 	@echo "... CCHVAPI.o"
 	@echo "... CCHVAPI.i"
@@ -324,6 +516,27 @@ help:
 	@echo "... GigEDataProcess.o"
 	@echo "... GigEDataProcess.i"
 	@echo "... GigEDataProcess.s"
+	@echo "... Inc/MV_CrossPlatform/Linux_Thread.o"
+	@echo "... Inc/MV_CrossPlatform/Linux_Thread.i"
+	@echo "... Inc/MV_CrossPlatform/Linux_Thread.s"
+	@echo "... Inc/MV_CrossPlatform/MV_Log.o"
+	@echo "... Inc/MV_CrossPlatform/MV_Log.i"
+	@echo "... Inc/MV_CrossPlatform/MV_Log.s"
+	@echo "... Inc/MV_CrossPlatform/MV_Memory.o"
+	@echo "... Inc/MV_CrossPlatform/MV_Memory.i"
+	@echo "... Inc/MV_CrossPlatform/MV_Memory.s"
+	@echo "... Inc/MV_CrossPlatform/MV_Thread.o"
+	@echo "... Inc/MV_CrossPlatform/MV_Thread.i"
+	@echo "... Inc/MV_CrossPlatform/MV_Thread.s"
+	@echo "... Inc/MV_CrossPlatform/MV_Tools.o"
+	@echo "... Inc/MV_CrossPlatform/MV_Tools.i"
+	@echo "... Inc/MV_CrossPlatform/MV_Tools.s"
+	@echo "... Inc/MV_CrossPlatform/Windows_Thread.o"
+	@echo "... Inc/MV_CrossPlatform/Windows_Thread.i"
+	@echo "... Inc/MV_CrossPlatform/Windows_Thread.s"
+	@echo "... Inc/Socket/Socket.o"
+	@echo "... Inc/Socket/Socket.i"
+	@echo "... Inc/Socket/Socket.s"
 	@echo "... TrigImgPack.o"
 	@echo "... TrigImgPack.i"
 	@echo "... TrigImgPack.s"
@@ -333,6 +546,9 @@ help:
 	@echo "... clientProp.o"
 	@echo "... clientProp.i"
 	@echo "... clientProp.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... wqueue.o"
 	@echo "... wqueue.i"
 	@echo "... wqueue.s"

@@ -1,15 +1,14 @@
 // -*- coding: gb2312-dos -*-
-#include "stdafx.h"
 #include <stdio.h>
 #include <time.h>
 #include <stdarg.h>
 #include <string.h>
 #include "MV_CrossPlatform.h"
 
-
+/*
 void    MV_GetCurTime(char* strTime)
 {
-    //获取当前系统时间
+    //锟斤拷取锟斤拷前系统时锟斤拷
     time_t rawtime;
     struct tm  timeinfo;
     time ( &rawtime );
@@ -76,7 +75,7 @@ void    MV_DumpLogBystr( char* pFile, char *fmt, ...)
     va_list args;
     char   szInfo[512];
 
-    //获取当前系统时间
+    //锟斤拷取锟斤拷前系统时锟斤拷
     time_t rawtime;
     struct tm  timeinfo;
     time ( &rawtime );
@@ -105,7 +104,7 @@ void    MV_DumpLogByfp( FILE* fp, char *fmt, ...)
     va_list args;
     char   szInfo[512] = {0};
 
-    //获取当前系统时间
+    //锟斤拷取锟斤拷前系统时锟斤拷
     time_t rawtime;
     struct tm  timeinfo;
     time ( &rawtime );
@@ -141,8 +140,8 @@ double MV_GetMilliseconds()
     return 0.0;
 #endif
 }
+*/
 
+// 锟斤拷锟斤拷锟侥硷拷锟斤拷
 
-// 创建文件夹
-
-// 以时间命名log文件
+// 锟斤拷时锟斤拷锟斤拷锟斤拷log锟侥硷拷

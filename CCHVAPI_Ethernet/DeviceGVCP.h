@@ -11,7 +11,6 @@
 #include <iostream>
 #include "Device.h"
 #include "Inc/Socket/Socket.h"
-//#include "Inc/color_print/color_print.h"
 #include "Inc/MVErrorDefine.h"
 #include "Inc/MVGigEVisionGVCPDefine.h"
 #include "Inc/MVGigEVisionDeviceDefine.h"

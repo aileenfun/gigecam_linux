@@ -7,7 +7,7 @@
 #include "GigEcamProp.h"
 #include "DeviceGVCP.h"
 #include <vector>
-
+#include "./Inc/MV_CrossPlatform/MV_CrossPlatform.h"
 class GigEcamInstance  //= virtualGEVCam
 {
 
@@ -87,7 +87,8 @@ public:
 			}
 			 if (recv_thread)
 			 {
-				 _pThreadGvsp = MV_CreateThread(MV_NULL, DeviceGVCP::HandlingAckPacket, (&(this->m_DeviceGVCP)));
+				 //_pThreadGvsp = MV_CreateThread(MV_NULL, DeviceGVCP::HandlingAckPacket, (&(this->m_DeviceGVCP)));
+				  _pThreadGvsp = MV_CreateThread(MV_NULL, DeviceGVCP::HandlingAckPacket,(void*) (&m_DeviceGVCP));
 				 if (_pThreadGvsp == MV_NULL)
 				 {
 					return  -4;

@@ -1,0 +1,1 @@
+/home/nxb/gigecam_linux/Discovery/build/CMakeFiles/discovery.dir

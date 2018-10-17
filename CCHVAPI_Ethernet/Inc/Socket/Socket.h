@@ -14,7 +14,9 @@
 #pragma comment(lib,"ws2_32.lib")
 #else
 #include <sys/socket.h>
+#include <sys/types.h>
 #include <netinet/in.h>
+#include <netinet/ip.h>
 #include <arpa/inet.h>
 #include <netdb.h>
 #include <unistd.h>
@@ -85,7 +87,8 @@ struct Address : protected sockaddr_in
     inline Ip SetAddressIp(Ip);
 
     inline Port GetAddressPort(void) const;
-    inline Port SetAddressPort(Port);
+   // inline Port SetAddressPort(Port port);
+     unsigned int  SetAddressPort(unsigned int p);
 
     friend std::ostream& operator<< (std::ostream&, Address&);
 };

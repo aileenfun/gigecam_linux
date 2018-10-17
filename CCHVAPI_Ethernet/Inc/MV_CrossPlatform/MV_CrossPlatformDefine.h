@@ -4,6 +4,7 @@
 #define _MV_CROSSPLATFORM_DEFINE_H_
 
 #include <stdio.h>
+#include <pthread.h>
 #define MV_LINUX
 #if defined(WIN32)
 #define MV_WINDOWS

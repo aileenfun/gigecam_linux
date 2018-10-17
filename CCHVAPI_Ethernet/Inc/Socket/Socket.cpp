@@ -1,6 +1,5 @@
-#include "stdafx.h"
 #include "Socket.h"
-
+ #include <sys/socket.h>
 // Address.cpp
 namespace MVComponent
 {
@@ -38,8 +37,8 @@ inline Ip Address::GetAddressIp(void) const
 inline Ip Address::SetAddressIp(Ip ip)
 {
 	unsigned long address = inet_addr(ip.c_str());
-	this->sin_addr.S_un.S_addr = address;
-	
+	//this->sin_addr.S_un.S_addr = address;
+	this->sin_addr.s_addr=address;
 #ifdef WINDOWS
     /*
 	unsigned long address = inet_addr(ip.c_str());//error for 255.255.255.255
@@ -69,13 +68,19 @@ inline Port Address::GetAddressPort(void) const
 {
     return ntohs(this->sin_port);
 }
-
+unsigned int Address::SetAddressPort(unsigned int port)
+{
+    Port p=port;
+    this->sin_port = htons(port);
+    return this->GetAddressPort();
+}
+/*
 inline Port Address::SetAddressPort(Port port)
 {
     this->sin_port = htons(port);
     return this->GetAddressPort();
 }
-
+*/
 std::ostream& operator<< (std::ostream &out, Address &address)
 {
     out << address.GetAddressIp() << ":" << address.GetAddressPort();
@@ -126,7 +131,7 @@ void CommonSocket::Open(void)
     {
 		if ((this->_socket_id = socket(AF_INET, this->_socket_type, 0)) == -1)
 		{
-			unsigned long dw = WSAGetLastError();
+			//unsigned long dw = WSAGetLastError();
 			throw SocketException("[open] Cannot create socket");
 		}
         this->_opened = true;
@@ -136,7 +141,7 @@ void CommonSocket::Open(void)
 
 void CommonSocket::Close(void)
 {
-	_num_sockets = 0;
+	//_num_sockets = 0;
     if (this->_opened)
     {
 #ifdef WINDOWS
@@ -215,11 +220,30 @@ int CommonSocket::GetOption(int level, int optname, void* optval, socklen_t* opt
 int CommonSocket::SetBroadcast(bool isbroadcast)
 {
     int ret = 0;
-    if ((ret = ::setsockopt(_socket_id, SOL_SOCKET, SO_BROADCAST, (const char*)&isbroadcast, sizeof(bool))) == SOCKET_ERROR)
+    
+    int enabled=1;
+    if(isbroadcast)
     {
-        std::stringstream error;
-        error << "[set_broadcast] error";
-        throw SocketException(error.str());
+        enabled=1;
+    }
+    else
+    {
+        enabled=0;
+    }
+    if ((ret = ::setsockopt(_socket_id, SOL_SOCKET, SO_BROADCAST, &enabled, sizeof(enabled))) == SOCKET_ERROR)
+    {
+
+        std::cout<<errno<<std::endl;
+        //std::stringstream error;
+   //     error << "[set_broadcast] error";
+    //    std::cout<<error.str()<<ret<<std::endl;
+ //       if (setsockopt(fildes, level, name, data, data_size) < 0)
+//{
+ //   fprintf(stderr, "%s\n", explain_setsockopt(fildes,
+ //       level, name, data, data_size));
+ //   exit(EXIT_FAILURE);
+//}
+       // throw SocketException(error.str());
     }
     return ret;
 }
@@ -401,7 +425,8 @@ int CommonSocket::GetBuffsize(int& sendbuffsize, int& recvbuffsize)
 int CommonSocket::SetDontfragment(bool isdf)
 {
     int ret = 0;
-    if ((ret = setsockopt(_socket_id, IPPROTO_IP, IP_DONTFRAGMENT, (const char*)&isdf, sizeof(isdf))) == SOCKET_ERROR)
+    //if ((ret = setsockopt(_socket_id, IPPROTO_IP, IP_DONTFRAGMENT, (const char*)&isdf, sizeof(isdf))) == SOCKET_ERROR)
+    if ((ret = setsockopt(_socket_id, IPPROTO_IP, IP_MTU_DISCOVER, (const char*)&isdf, sizeof(isdf))) == SOCKET_ERROR)
     {
         std::stringstream error;
         error << "[set_dontfragment] error";
@@ -610,6 +635,7 @@ int TCP::SetReuseaddr(bool isreuseaddr)
 
 int TCP::SetNodelay(bool isnodelay)
 {
+    /*
     int ret = 0;
     if ((ret = setsockopt(_socket_id, IPPROTO_TCP, TCP_NODELAY, (const char*)&isnodelay, sizeof(bool))) == SOCKET_ERROR)
     {
@@ -618,6 +644,7 @@ int TCP::SetNodelay(bool isnodelay)
         throw SocketException(error.str());
     }
     return ret;
+    */
 }
 
 void TCP::Close(void)
@@ -1062,7 +1089,7 @@ int UDP::Send(Ip ip, Port port, const char* data, size_t len)
 
     if ((ret = sendto(this->_socket_id, (const char*)data, len, 0, (struct sockaddr*)&address, sizeof(struct sockaddr))) == -1)
     {
-		int errorcode = WSAGetLastError();
+		//int errorcode = WSAGetLastError();
         std::stringstream error;
         error << "[send] with [ip=" << ip << "] [port=" << port << "] [data=" << data
               << "] [len=" << len << "] Cannot send";
@@ -1104,25 +1131,25 @@ int UDP::Send(Ip ip, Port port, const T *data, size_t len)
 
     return ret;
 }
-
+/*
 template <typename T>
 int UDP::Send(const Address& address, const T *data, size_t len)
 {
     return this->Send<T>(address.GetIp(), address.GetPort(), data, len);
 }
-
+*/
 template <typename T>
 int UDP::Send(Ip ip, Port port, T data)
 {
     return this->Send<T>(ip, port, &data, 1);
 }
-
+/*
 template <typename T>
 int UDP::Send(const Address& address, T data)
 {
     return this->Send<T>(address.GetIp(), address.GetPort(), &data, 1);
 }
-
+*/
 template <>
 int UDP::Send<std::string>(Ip ip, Port port, std::string data)
 {

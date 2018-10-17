@@ -11,11 +11,10 @@ GigEcamInstance searchCamIns;
 int GigEaddInstance(void *lpUser, LPMV_CALLBACK2 CallBackFunc, CCHCamera *info)
 {
 	GigEcamInstance*this_camInstance = new GigEcamInstance(lpUser, CallBackFunc, info);
-	int rst = 0;
-	if (this_camInstance->initEth(info)<0)
+	int rst = this_camInstance->initEth(info);
+	if (rst<0)
 	{
-		//rst=this_camInstance->connect(info);//move to start()
-		return -1;
+		return rst;
 	}
 	vec_camins.push_back(this_camInstance);
 
@@ -218,16 +217,3 @@ int GigEsetBinning(int enable, int camNum)
 	return vec_camins[camNum]->setBinning(enable);
 }
 
-byte * pimagebuf_board1= NULL;
-byte * pimagebuf_board2 = NULL;
-
-byte * pimagebuf[12] = { NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL};
-int imgready[12] = { 0,0,0,0,0,0,0,0,0,0,0,0 };
-int board1 = 0;
-int board2 = 0;
-
-map_camera *cameralist;
-
-//#ifdef _W1280
-int cs_width = 1280;
-int cs_height = 128;

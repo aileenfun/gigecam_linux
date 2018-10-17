@@ -1,6 +1,5 @@
 // -*- coding: gb2312-dos -*-
 
-#include "stdafx.h"
 #include "MV_CrossPlatform.h"
 
 #if defined(MV_WINDOWS)
@@ -10,7 +9,7 @@
 #endif
 
 
-// ³õÊ¼»¯Ò»¸öÁÙ½çÇø
+// ï¿½ï¿½Ê¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ù½ï¿½ï¿½ï¿½
 void    MV_InitMutex(MV_Mutex * mutex)
 {
 #if defined(MV_WINDOWS)
@@ -20,17 +19,17 @@ void    MV_InitMutex(MV_Mutex * mutex)
 #endif
 }
 
-// ÊÍ·ÅÁÙ½çÇø
+// ï¿½Í·ï¿½ï¿½Ù½ï¿½ï¿½ï¿½
 void    MV_EnterMutex(MV_Mutex * mutex)
 {
 #if defined(MV_WINDOWS)
     WINDOWS_EnterMutex(mutex);
 #elif defined(MV_LINUX)
-    LINUX_Enterutex(mutex);
+    LINUX_EnterMutex(mutex);
 #endif
 }
 
-// ½øÈëÁÙ½çÇø
+// ï¿½ï¿½ï¿½ï¿½ï¿½Ù½ï¿½ï¿½ï¿½
 void    MV_LeaveMutex(MV_Mutex * mutex)
 {
 #if defined(MV_WINDOWS)
@@ -40,7 +39,7 @@ void    MV_LeaveMutex(MV_Mutex * mutex)
 #endif
 }
 
-// ÍË³öÁÙ½çÇø
+// ï¿½Ë³ï¿½ï¿½Ù½ï¿½ï¿½ï¿½
 void    MV_DeleteMutex(MV_Mutex * mutex)
 {
 #if defined(MV_WINDOWS)
@@ -50,7 +49,7 @@ void    MV_DeleteMutex(MV_Mutex * mutex)
 #endif
 }
 
-// ´´½¨Ïß³Ì
+// ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½
 void*   MV_CreateThread(MV_THREAD_ATTR* attr ,Thread_CallBack callbackFunc , void* pUser)
 {
 #if defined(MV_WINDOWS)
@@ -60,7 +59,7 @@ void*   MV_CreateThread(MV_THREAD_ATTR* attr ,Thread_CallBack callbackFunc , voi
 #endif
 }
 
-// µÈ´ýÏß³ÌÕý³£ÍË³ö
+// ï¿½È´ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½
 int     MV_WaitForThreadEnd(void* pThread)
 {
 #if defined(MV_WINDOWS)
@@ -70,7 +69,7 @@ int     MV_WaitForThreadEnd(void* pThread)
 #endif
 }
 
-// ½áÊøÏß³Ì
+// ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½
 int     MV_EndThread()
 {
 #if defined(MV_WINDOWS)
@@ -80,7 +79,7 @@ int     MV_EndThread()
 #endif
 }
 
-// Ïú»ÙÏß³Ì¾ä±ú
+// ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ì¾ï¿½ï¿½
 int     MV_DestroyThread(void* pThread)
 {
 #if defined(MV_WINDOWS)

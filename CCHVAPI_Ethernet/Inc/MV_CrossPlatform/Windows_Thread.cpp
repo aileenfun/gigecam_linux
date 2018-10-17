@@ -1,41 +1,42 @@
 // -*- coding: gb2312-dos -*-
-#include "stdafx.h"
+
 #include "Windows_Thread.h"
 #include "MV_CrossPlatformDefine.h"
 
 #ifdef MV_WINDOWS
 #include "process.h"
+#include "stdafx.h"
 
-// ³õÊ¼»¯Ò»¸öÁÙ½çÇø
+// ï¿½ï¿½Ê¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ù½ï¿½ï¿½ï¿½
 void    WINDOWS_InitMutex(MV_Mutex* mutex)
 {
     InitializeCriticalSection(mutex);
     return;
 }
 
-// ÊÍ·ÅÁÙ½çÇø
+// ï¿½Í·ï¿½ï¿½Ù½ï¿½ï¿½ï¿½
 void    WINDOWS_EnterMutex(MV_Mutex* mutex)
 {
     EnterCriticalSection(mutex);
     return ;
 }
 
-// ½øÈëÁÙ½çÇø
+// ï¿½ï¿½ï¿½ï¿½ï¿½Ù½ï¿½ï¿½ï¿½
 void    WINDOWS_LeaveMutex(MV_Mutex* mutex)
 {
     LeaveCriticalSection(mutex);
     return ;
 }
 
-// ÍË³öÁÙ½çÇø
+// ï¿½Ë³ï¿½ï¿½Ù½ï¿½ï¿½ï¿½
 void    WINDOWS_DeleteMutex(MV_Mutex* mutex)
 {
     DeleteCriticalSection(mutex);
     return ;
 }
 
-// ´´½¨Ïß³Ì
-// ³É¹¦·µ»Ø·Ç¿ÕÖ¸Õë£¬Ê§°Ü·µ»Ø¿ÕÖ¸Õë
+// ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½
+// ï¿½É¹ï¿½ï¿½ï¿½ï¿½Ø·Ç¿ï¿½Ö¸ï¿½ë£¬Ê§ï¿½Ü·ï¿½ï¿½Ø¿ï¿½Ö¸ï¿½ï¿½
 void*   WINDOWS_CreateThread(MV_THREAD_ATTR* attr,Thread_CallBack callbackFunc, void* pUser)
 {
     void*           pThread         = MV_NULL;
@@ -81,21 +82,21 @@ void*   WINDOWS_CreateThread(MV_THREAD_ATTR* attr,Thread_CallBack callbackFunc, 
     return pThread;
 }
 
-// µÈ´ýÏß³ÌÕý³£ÍË³ö
+// ï¿½È´ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½
 int     WINDOWS_WaitForThreadEnd(void* pThread)
 {
     WaitForSingleObject(pThread,INFINITE);
     return 0;
 }
 
-// ½áÊøÏß³Ì
+// ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½
 int     WINDOWS_EndThread()
 {
     _endthreadex(0);
     return 0;
 }
 
-// Ïú»ÙÏß³Ì¾ä±ú
+// ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ì¾ï¿½ï¿½
 int     WINDOWS_DestroyThread(void* pThread)
 {
     CloseHandle(pThread);

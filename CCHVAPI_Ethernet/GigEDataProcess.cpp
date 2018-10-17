@@ -59,7 +59,7 @@ int GigECDataProcess::Open(int height,int width, GigECDataCapture* dp,LPMV_CALLB
 	memset(m_In,0,sizeof(m_In));
 	memset(m_Out,0,sizeof(m_Out));
 	m_bEnd=FALSE;
-	pthread_create(&m_hThread,NULL,ThreadAdapter,NULL);
+	pthread_create(&m_hThread,NULL,ThreadAdapter,this);
 	m_temp=new byte[g_width*g_height];
 	this_dp=dp;
 	return 0;

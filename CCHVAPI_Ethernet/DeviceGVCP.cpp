@@ -67,6 +67,7 @@ int DeviceGVCP::Init(CCHCamera *c)
 		_UdpSkt.Close();
 		_UdpSkt.Open();
 		_UdpSkt.BindAddr(Address(c->hostaddr, 0));
+		if(c->hostaddr!="0.0.0.0")
 		_UdpSkt.SetBroadcast(true);
 		_UdpSkt.SetDontfragment(true);
 		devinfo = *(c->CamInfo);
@@ -119,7 +120,8 @@ int DeviceGVCP::ReceiveMsg(MVComponent::UDP socket, unsigned int& nLen)
 
 	try
 	{
-		nLen = socket.ReceiveTimeout(500, _From, _cRecvData, nLen);
+		//nLen = socket.ReceiveTimeout(500, _From, _cRecvData, nLen);
+		nLen = socket.Receive( _From, _cRecvData, nLen);
 	}
 	catch (SocketException& SktEx)
 	{
@@ -132,17 +134,24 @@ int DeviceGVCP::ReceiveMsg(MVComponent::UDP socket, unsigned int& nLen)
 }
 int DeviceGVCP::decodePacket(MVComponent::UDP s)
 {
+	unsigned int nLen = MV_GVCP_MAX_MSG_LEN;
 	for (int r = 0;r < RETRYTIME;r++)
 	{
-		unsigned int nLen = MV_GVCP_MAX_MSG_LEN;
+		
 		int nRet = 0;
+
 		if ((nRet = ReceiveMsg(s, nLen)) != MV_OK)
 		{
 #ifdef MV_WINDOWS
 			return nRet;
 #endif
+			
+			std::cout<<"receive error"<<nRet<<std::endl;
 		}
-
+		if(nLen>0)
+		break;
+		usleep(1);
+	}
 		if (nLen > 0)
 		{
 			ACK_MSG_HEADER* pCmdHdr = (ACK_MSG_HEADER*)(_cRecvData);
@@ -216,8 +225,7 @@ int DeviceGVCP::decodePacket(MVComponent::UDP s)
 			}
 			}
 		}
-		usleep(1);
-	}
+		
 }
 ThreadReturnType MV_STDCALL DeviceGVCP::HandlingAckPacket(void* Arg)
 {
@@ -231,6 +239,7 @@ ThreadReturnType MV_STDCALL DeviceGVCP::HandlingAckPacket(void* Arg)
 	{
 		// Start dealing CMD .......
 		nLen = MV_GVCP_MAX_MSG_LEN;
+		//error
 		if ((nRet = pDeviceGvcp->ReceiveMsg(pDeviceGvcp->_UdpSkt, nLen)) != MV_OK)
 		{
 #ifdef MV_WINDOWS
@@ -441,7 +450,7 @@ int DeviceGVCP::ForceIP(CCHCamera *info)
 
 	tempaddr.SetAddressIp(info->hostaddr);
 
-	tempaddr.SetAddressPort(0);
+//	tempaddr.SetAddressPort(0);
 
 	tempudp.BindAddr(tempaddr);
 
@@ -634,11 +643,14 @@ int DeviceGVCP::WriteRegCmd(unsigned int addr, unsigned int data)
 	pCmdHdr->cKeyValue = 0x42;
 	pCmdHdr->nCommand = htons(MV_GEV_WRITEREG_CMD);
 	pCmdHdr->cFlg = 1;
-	pCmdHdr->nReqId = _nReqId++;
+	pCmdHdr->nReqId =htons( _nReqId++);
+	pCmdHdr->nLength=htons(3);
 
 	WRITEREG_CMD_MSG *WriteRegMsg = (WRITEREG_CMD_MSG*)(cSendData + sizeof(CMD_MSG_HEADER));
 	WriteRegMsg->nRegAddress = htonl(addr);
-	WriteRegMsg->nRegData = htonl(data);
+	WriteRegMsg->nRegData = htonl(data);//error here
+	cout<<"write reg addr: "<<addr<<endl;
+	cout<<"write reg data: "<<htonl(data)<<endl;
 	try
 	{
 		size_t nLen = sizeof(CMD_MSG_HEADER) + sizeof(WRITEREG_CMD_MSG);
@@ -710,18 +722,24 @@ int DeviceGVCP::getInterface()
             if (s != 0) {
                 printf("getnameinfo() failed: %s\n", gai_strerror(s));
                 exit(EXIT_FAILURE);
-            }
-            printf("\taddress: <%s>\n", host);
-
+           		}
 				unsigned long ip = inet_addr(host);
+				unsigned long ip127=inet_addr("127.0.0.1");
+				if(ip==ip127)
+				{
+					continue;
+				}
 				if (ip == 0)
 				{
 					continue;
 				}
+            	printf("\tsearch host address: <%s>\n", host);
 				UDP tempudp;
 				tempudp.Open();
 				Address tempaddr;
+				
 				tempaddr.SetAddressIp(host);
+				//tempaddr.SetAddressIp("255.255.255.255");
 				tempaddr.SetAddressPort(0);
 				tempudp.BindAddr(tempaddr);
 				tempudp.SetBroadcast(true);
