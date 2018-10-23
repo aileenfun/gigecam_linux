@@ -1,1 +1,1 @@
-/home/hyf/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/discovery.dir
+/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/discovery.dir

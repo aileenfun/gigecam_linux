@@ -120,8 +120,8 @@ int DeviceGVCP::ReceiveMsg(MVComponent::UDP socket, unsigned int& nLen)
 
 	try
 	{
-		nLen = socket.ReceiveTimeout(500, _From, _cRecvData, nLen);
-		//nLen = socket.Receive( _From, _cRecvData, nLen);
+		//nLen = socket.ReceiveTimeout(500, _From, _cRecvData, nLen);
+		nLen = socket.Receive( _From, _cRecvData, nLen);
 	}
 	catch (SocketException& SktEx)
 	{

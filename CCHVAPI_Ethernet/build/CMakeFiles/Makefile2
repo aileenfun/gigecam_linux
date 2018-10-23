@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hyf/gigecam_linux/CCHVAPI_Ethernet
+CMAKE_SOURCE_DIR = /home/nxb/gigecam_linux/CCHVAPI_Ethernet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hyf/gigecam_linux/CCHVAPI_Ethernet/build
+CMAKE_BINARY_DIR = /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/discovery.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/hyf/gigecam_linux/CCHVAPI_Ethernet/build
 CMakeFiles/discovery.dir/all:
 	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/depend
 	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hyf/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
 	@echo "Built target discovery"
 .PHONY : CMakeFiles/discovery.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/discovery.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/discovery.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hyf/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/discovery.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hyf/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles 0
 .PHONY : CMakeFiles/discovery.dir/rule
 
 # Convenience name for target.
