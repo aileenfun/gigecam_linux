@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -O3 -Wall -Wno-unused-result -g     CMakeFiles/discovery.dir/main.cpp.o  -o discovery  -L../../CCHVAPI_Ethernet/build  -L/usr/local/lib -rdynamic -lgigecam -lopencv_core -lopencv_highgui -lpthread -Wl,-rpath,../../CCHVAPI_Ethernet/build:/usr/local/lib 
