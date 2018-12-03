@@ -83,10 +83,10 @@ struct Address : protected sockaddr_in
     Address(struct sockaddr_in);
     Address(const Address&);
 
-    inline Ip GetAddressIp(void) const;
-    inline Ip SetAddressIp(Ip);
+     Ip GetAddressIp(void) const;
+     Ip SetAddressIp(Ip);
 
-    inline Port GetAddressPort(void) const;
+     Port GetAddressPort(void) const;
    // inline Port SetAddressPort(Port port);
      unsigned int  SetAddressPort(unsigned int p);
 

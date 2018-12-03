@@ -29,12 +29,12 @@ Address::Address(const Address &address)
     this->sin_port = address.sin_port;
 }
 
-inline Ip Address::GetAddressIp(void) const
+ Ip Address::GetAddressIp(void) const
 {
     return inet_ntoa(this->sin_addr);
 }
 
-inline Ip Address::SetAddressIp(Ip ip)
+ Ip Address::SetAddressIp(Ip ip)
 {
 	unsigned long address = inet_addr(ip.c_str());
 	//this->sin_addr.S_un.S_addr = address;
@@ -64,7 +64,7 @@ inline Ip Address::SetAddressIp(Ip ip)
     return this->GetAddressIp();
 }
 
-inline Port Address::GetAddressPort(void) const
+ Port Address::GetAddressPort(void) const
 {
     return ntohs(this->sin_port);
 }
