@@ -169,7 +169,7 @@ int DeviceGVCP::decodePacket(MVComponent::UDP s)
 				
 				char Caiche[32];
 				memcpy(Caiche,ptemp->stGigEInfo.chManufacturerName,32);
-				if(strcmp(Caiche,"CaiChe Vision"))//strcmp==0 means equal
+				if(strcmp(Caiche,"Caiche Vision"))//strcmp==0 means equal
 				{
 					break;
 				}
