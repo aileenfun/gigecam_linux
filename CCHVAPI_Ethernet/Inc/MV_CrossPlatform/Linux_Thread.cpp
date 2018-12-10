@@ -19,9 +19,9 @@ void  LINUX_DeleteMutex(MV_Mutex * mutex)
 }
 void*   LINUX_CreateThread(MV_THREAD_ATTR* attr ,Thread_CallBack callbackFunc , void* pUser)
 {
-    pthread_t tidp;
-    pthread_create( &tidp, NULL, callbackFunc, pUser);
-    return &tidp;
+    pthread_t *tidp=new pthread_t;
+    pthread_create( tidp, NULL, callbackFunc, pUser);
+    return tidp;
     
 }
 int  LINUX_WaitForThreadEnd(void* pThread)
