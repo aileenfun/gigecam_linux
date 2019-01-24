@@ -19,7 +19,7 @@ void  RawCallBack(void* lpParam, void* lpUser)
 	if (thisFrame == NULL)
 		return;
 	int dispheight = thisFrame->m_height / g_camsize;
-
+	printf("Trigsource:%d\n",thisFrame->TrigSource);
 	int dispwidth = thisFrame->m_width;
 
 	if (imgBuf == NULL)
