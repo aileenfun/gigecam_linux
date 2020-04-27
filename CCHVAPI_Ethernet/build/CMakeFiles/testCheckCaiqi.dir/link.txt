@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -O3 -fPIC -Wall -Wno-unused-variable -Wno-unused-but-set-variable -g    CMakeFiles/testCheckCaiqi.dir/testCheckCaiqi.cpp.o  -o testCheckCaiqi -rdynamic -lopencv_core -lopencv_highgui -lpthread -Wl,-Bstatic -lcheckCaiqi -Wl,-Bdynamic 

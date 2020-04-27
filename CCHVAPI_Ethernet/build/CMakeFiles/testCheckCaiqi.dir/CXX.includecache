@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alan/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.h
+
+/home/alan/gigecam_linux/CCHVAPI_Ethernet/testCheckCaiqi.cpp
+stdio.h
+-
+unistd.h
+-
+signal.h
+-
+checkCaiqi.h
+/home/alan/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.h
+

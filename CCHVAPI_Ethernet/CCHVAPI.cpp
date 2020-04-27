@@ -216,4 +216,24 @@ int GigEsetBinning(int enable, int camNum)
 	camNum = camNum - 1;
 	return vec_camins[camNum]->setBinning(enable);
 }
+int GigECheckCaiQi()
+{
+	typedef std::map<std::string, CCHCamera*> map_camera;
+	map_camera cameralist;
+	
+	int cameracnt=0;
+	//map_camera *cameralist=new map_camera();
+    GigEsearchCamera(&cameralist);   
+    map_camera ::iterator itr;
+	
+	for(itr=cameralist.begin();itr!=cameralist.end();++itr)
+	{
+		//std::string temp=itr->first;
+		//std::cout<<"camera list:"<<std::endl;
+		//std::cout<<"["<<cameracnt+1<<"]:SN"<<temp<<std::endl;
+		cameracnt++;
+	}
+	
+	return cameracnt;
 
+}

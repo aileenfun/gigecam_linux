@@ -17,6 +17,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/Socket/Socket.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o"
   "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/TrigImgPack.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/discovery.dir/TrigImgPack.cpp.o"
   "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/camProp.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/discovery.dir/camProp.cpp.o"
+  "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/discovery.dir/checkCaiqi.cpp.o"
   "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/clientProp.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/discovery.dir/clientProp.cpp.o"
   "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/main.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/discovery.dir/main.cpp.o"
   "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/wqueue.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/discovery.dir/wqueue.cpp.o"

@@ -6,6 +6,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/discovery.dir/wqueue.cpp.o"
   "CMakeFiles/discovery.dir/clientProp.cpp.o"
   "CMakeFiles/discovery.dir/camProp.cpp.o"
+  "CMakeFiles/discovery.dir/checkCaiqi.cpp.o"
   "CMakeFiles/discovery.dir/TrigImgPack.cpp.o"
   "CMakeFiles/discovery.dir/GigEDataCapture.cpp.o"
   "CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o"

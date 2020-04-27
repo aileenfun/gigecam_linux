@@ -210,9 +210,32 @@ CMakeFiles/discovery.dir/camProp.cpp.o.provides: CMakeFiles/discovery.dir/camPro
 
 CMakeFiles/discovery.dir/camProp.cpp.o.provides.build: CMakeFiles/discovery.dir/camProp.cpp.o
 
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: CMakeFiles/discovery.dir/flags.make
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../checkCaiqi.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/discovery.dir/checkCaiqi.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/discovery.dir/checkCaiqi.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.cpp
+
+CMakeFiles/discovery.dir/checkCaiqi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/discovery.dir/checkCaiqi.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.cpp > CMakeFiles/discovery.dir/checkCaiqi.cpp.i
+
+CMakeFiles/discovery.dir/checkCaiqi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/discovery.dir/checkCaiqi.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.cpp -o CMakeFiles/discovery.dir/checkCaiqi.cpp.s
+
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o.requires:
+.PHONY : CMakeFiles/discovery.dir/checkCaiqi.cpp.o.requires
+
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o.provides: CMakeFiles/discovery.dir/checkCaiqi.cpp.o.requires
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/checkCaiqi.cpp.o.provides.build
+.PHONY : CMakeFiles/discovery.dir/checkCaiqi.cpp.o.provides
+
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o.provides.build: CMakeFiles/discovery.dir/checkCaiqi.cpp.o
+
 CMakeFiles/discovery.dir/TrigImgPack.cpp.o: CMakeFiles/discovery.dir/flags.make
 CMakeFiles/discovery.dir/TrigImgPack.cpp.o: ../TrigImgPack.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/discovery.dir/TrigImgPack.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/discovery.dir/TrigImgPack.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/TrigImgPack.cpp
 
@@ -235,7 +258,7 @@ CMakeFiles/discovery.dir/TrigImgPack.cpp.o.provides.build: CMakeFiles/discovery.
 
 CMakeFiles/discovery.dir/GigEDataCapture.cpp.o: CMakeFiles/discovery.dir/flags.make
 CMakeFiles/discovery.dir/GigEDataCapture.cpp.o: ../GigEDataCapture.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/discovery.dir/GigEDataCapture.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/discovery.dir/GigEDataCapture.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEDataCapture.cpp
 
@@ -258,7 +281,7 @@ CMakeFiles/discovery.dir/GigEDataCapture.cpp.o.provides.build: CMakeFiles/discov
 
 CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o: CMakeFiles/discovery.dir/flags.make
 CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o: ../Inc/Socket/Socket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/Socket/Socket.cpp
 
@@ -281,7 +304,7 @@ CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o.provides.build: CMakeFiles/disc
 
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Log.cpp.o: CMakeFiles/discovery.dir/flags.make
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Log.cpp.o: ../Inc/MV_CrossPlatform/MV_Log.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Log.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Log.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MV_CrossPlatform/MV_Log.cpp
 
@@ -304,7 +327,7 @@ CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Log.cpp.o.provides.build: CMake
 
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.o: CMakeFiles/discovery.dir/flags.make
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.o: ../Inc/MV_CrossPlatform/MV_Memory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MV_CrossPlatform/MV_Memory.cpp
 
@@ -327,7 +350,7 @@ CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.o.provides.build: CM
 
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.o: CMakeFiles/discovery.dir/flags.make
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.o: ../Inc/MV_CrossPlatform/Linux_Thread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MV_CrossPlatform/Linux_Thread.cpp
 
@@ -350,7 +373,7 @@ CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.o.provides.build:
 
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.o: CMakeFiles/discovery.dir/flags.make
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.o: ../Inc/MV_CrossPlatform/Windows_Thread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MV_CrossPlatform/Windows_Thread.cpp
 
@@ -373,7 +396,7 @@ CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.o.provides.buil
 
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.o: CMakeFiles/discovery.dir/flags.make
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.o: ../Inc/MV_CrossPlatform/MV_Thread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MV_CrossPlatform/MV_Thread.cpp
 
@@ -396,7 +419,7 @@ CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.o.provides.build: CM
 
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.o: CMakeFiles/discovery.dir/flags.make
 CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.o: ../Inc/MV_CrossPlatform/MV_Tools.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MV_CrossPlatform/MV_Tools.cpp
 
@@ -426,6 +449,7 @@ discovery_OBJECTS = \
 "CMakeFiles/discovery.dir/wqueue.cpp.o" \
 "CMakeFiles/discovery.dir/clientProp.cpp.o" \
 "CMakeFiles/discovery.dir/camProp.cpp.o" \
+"CMakeFiles/discovery.dir/checkCaiqi.cpp.o" \
 "CMakeFiles/discovery.dir/TrigImgPack.cpp.o" \
 "CMakeFiles/discovery.dir/GigEDataCapture.cpp.o" \
 "CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o" \
@@ -446,6 +470,7 @@ discovery: CMakeFiles/discovery.dir/main.cpp.o
 discovery: CMakeFiles/discovery.dir/wqueue.cpp.o
 discovery: CMakeFiles/discovery.dir/clientProp.cpp.o
 discovery: CMakeFiles/discovery.dir/camProp.cpp.o
+discovery: CMakeFiles/discovery.dir/checkCaiqi.cpp.o
 discovery: CMakeFiles/discovery.dir/TrigImgPack.cpp.o
 discovery: CMakeFiles/discovery.dir/GigEDataCapture.cpp.o
 discovery: CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o
@@ -471,6 +496,7 @@ CMakeFiles/discovery.dir/requires: CMakeFiles/discovery.dir/main.cpp.o.requires
 CMakeFiles/discovery.dir/requires: CMakeFiles/discovery.dir/wqueue.cpp.o.requires
 CMakeFiles/discovery.dir/requires: CMakeFiles/discovery.dir/clientProp.cpp.o.requires
 CMakeFiles/discovery.dir/requires: CMakeFiles/discovery.dir/camProp.cpp.o.requires
+CMakeFiles/discovery.dir/requires: CMakeFiles/discovery.dir/checkCaiqi.cpp.o.requires
 CMakeFiles/discovery.dir/requires: CMakeFiles/discovery.dir/TrigImgPack.cpp.o.requires
 CMakeFiles/discovery.dir/requires: CMakeFiles/discovery.dir/GigEDataCapture.cpp.o.requires
 CMakeFiles/discovery.dir/requires: CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o.requires

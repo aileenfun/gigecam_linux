@@ -100,6 +100,30 @@ CMakeFiles/discovery.dir/TrigImgPack.cpp.o
 CMakeFiles/discovery.dir/camProp.cpp.o
  /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEcamProp.h
  /home/nxb/gigecam_linux/CCHVAPI_Ethernet/camProp.cpp
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/./Inc/MV_CrossPlatform/MV_CrossPlatform.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/./Inc/MV_CrossPlatform/MV_CrossPlatformDefine.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/CCHVAPI.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Device.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/DeviceGVCP.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEDataCapture.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEDataProcess.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEMutex.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigETrigImgPack.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEcamProp.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEclientProp.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEimgFrame.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEwqueue.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MVErrorDefine.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MVGiGEVisionGVCPRegisterDefine.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MVGigEVisionDeviceDefine.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MVGigEVisionGVCPDefine.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MVPixelType.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/MV_CrossPlatform/MV_CrossPlatform.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Inc/Socket/Socket.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/Types.h
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.cpp
+ /home/nxb/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.h
 CMakeFiles/discovery.dir/clientProp.cpp.o
  /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEcamProp.h
  /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEclientProp.h

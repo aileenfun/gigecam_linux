@@ -4,14 +4,16 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/CCHVAPI.cpp" "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles/gigecam.dir/CCHVAPI.cpp.o"
-  "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/DeviceGVCP.cpp" "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o"
-  "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/GigEDataCapture.cpp" "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o"
-  "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/GigEDataProcess.cpp" "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o"
-  "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/TrigImgPack.cpp" "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles/gigecam.dir/TrigImgPack.cpp.o"
-  "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/camProp.cpp" "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles/gigecam.dir/camProp.cpp.o"
-  "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/clientProp.cpp" "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles/gigecam.dir/clientProp.cpp.o"
-  "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/wqueue.cpp" "/home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles/gigecam.dir/wqueue.cpp.o"
+  "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/CCHVAPI.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/gigecam.dir/CCHVAPI.cpp.o"
+  "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/DeviceGVCP.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o"
+  "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEDataCapture.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o"
+  "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEDataProcess.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o"
+  "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/TrigImgPack.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/gigecam.dir/TrigImgPack.cpp.o"
+  "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/camProp.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/gigecam.dir/camProp.cpp.o"
+  "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/gigecam.dir/checkCaiqi.cpp.o"
+  "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/clientProp.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/gigecam.dir/clientProp.cpp.o"
+  "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/main.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/gigecam.dir/main.cpp.o"
+  "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/wqueue.cpp" "/home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/gigecam.dir/wqueue.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

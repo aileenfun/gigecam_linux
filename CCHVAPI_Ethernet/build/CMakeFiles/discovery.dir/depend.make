@@ -100,6 +100,30 @@ CMakeFiles/discovery.dir/TrigImgPack.cpp.o: ../Types.h
 CMakeFiles/discovery.dir/camProp.cpp.o: ../GigEcamProp.h
 CMakeFiles/discovery.dir/camProp.cpp.o: ../camProp.cpp
 
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: .././Inc/MV_CrossPlatform/MV_CrossPlatform.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: .././Inc/MV_CrossPlatform/MV_CrossPlatformDefine.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../CCHVAPI.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../Device.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../DeviceGVCP.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../GigEDataCapture.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../GigEDataProcess.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../GigEMutex.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../GigETrigImgPack.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../GigEcamProp.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../GigEclientProp.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../GigEimgFrame.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../GigEwqueue.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../Inc/MVErrorDefine.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../Inc/MVGiGEVisionGVCPRegisterDefine.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../Inc/MVGigEVisionDeviceDefine.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../Inc/MVGigEVisionGVCPDefine.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../Inc/MVPixelType.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../Inc/MV_CrossPlatform/MV_CrossPlatform.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../Inc/Socket/Socket.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../Types.h
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../checkCaiqi.cpp
+CMakeFiles/discovery.dir/checkCaiqi.cpp.o: ../checkCaiqi.h
+
 CMakeFiles/discovery.dir/clientProp.cpp.o: ../GigEcamProp.h
 CMakeFiles/discovery.dir/clientProp.cpp.o: ../GigEclientProp.h
 CMakeFiles/discovery.dir/clientProp.cpp.o: ../Types.h

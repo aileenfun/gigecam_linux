@@ -107,7 +107,7 @@ class DeviceGVCP
 	int					f_ReadRegDone;
 	int					f_DiscoveryDone;
 	MVComponent::UDP currentSocket;
-	
+	int checkCaiqi;
 };
 
 

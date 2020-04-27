@@ -19,7 +19,7 @@ DeviceGVCP::DeviceGVCP()
 	f_ForceIPDone = 1;
 	f_ReadRegDone = 1;
 	f_DiscoveryDone = 1;
-
+	checkCaiqi=-1;
 }
 
 DeviceGVCP::~DeviceGVCP()
@@ -171,18 +171,20 @@ int DeviceGVCP::decodePacket(MVComponent::UDP s)
 				memcpy(Caiche,ptemp->stGigEInfo.chManufacturerName,32);
 				if(strcmp(Caiche,"Caiche Vision"))//strcmp==0 means equal
 				{
+					checkCaiqi=-1;
 					break;
 				}
+				checkCaiqi=1;
 				
 				char *chartemp = new char[16];
 				memcpy(chartemp, ptemp->stGigEInfo.chSerialNumber, 16);
 				std::string sntemp(chartemp);
-				/*	if (pDeviceGvcp->devicelist.find(sntemp) != pDeviceGvcp->devicelist.end())
-				{
-					pDeviceGvcp->devicelist.erase(sntemp);
-				}
-				(pDeviceGvcp->devicelist).insert(std::pair<std::string, MV_CC_DEVICE_INFO*>(sntemp, ptemp));*/
-
+				//	if (pDeviceGvcp->devicelist.find(sntemp) != pDeviceGvcp->devicelist.end())
+				//{
+				//	pDeviceGvcp->devicelist.erase(sntemp);
+				//}
+				//(pDeviceGvcp->devicelist).insert(std::pair<std::string, MV_CC_DEVICE_INFO*>(sntemp, ptemp));*/
+				
 				CCHCamera *pcamera = new CCHCamera();
 				//pcamera.CamInfo = *ptemp;
 				memcpy(pcamera->CamInfo, ptemp, sizeof(MV_CC_DEVICE_INFO));
@@ -194,6 +196,7 @@ int DeviceGVCP::decodePacket(MVComponent::UDP s)
 					cameralist.erase(sntemp);
 				}
 				(cameralist).insert(std::pair<std::string, CCHCamera*>(sntemp, pcamera));
+				
 				break;
 			}
 			case MV_GEV_FORCEIP_ACK:
@@ -728,7 +731,7 @@ int DeviceGVCP::getInterface()
                     sizeof(struct sockaddr_in6),
                     host, NI_MAXHOST, NULL, 0, NI_NUMERICHOST);
             if (s != 0) {
-                printf("getnameinfo() failed: %s\n", gai_strerror(s));
+                //printf("getnameinfo() failed: %s\n", gai_strerror(s));
                 exit(EXIT_FAILURE);
            		}
 				unsigned long ip = inet_addr(host);
@@ -741,7 +744,7 @@ int DeviceGVCP::getInterface()
 				{
 					continue;
 				}
-            	printf("\tsearch host address: <%s>\n", host);
+            	//printf("\tsearch host address: <%s>\n", host);
 				UDP tempudp;
 				tempudp.Open();
 				Address tempaddr;

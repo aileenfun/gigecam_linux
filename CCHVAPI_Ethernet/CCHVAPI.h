@@ -387,5 +387,5 @@ public:
  int GigEsetROI(int xstart, int xend, int ystart, int yend, int enable, int camNum = 1);
  int GigEsetBinning(int enable,int camNum=1);
  int GigEsetSkip(int enable,int camNum=1);
-
+int GigECheckCaiQi();
 //#endif 

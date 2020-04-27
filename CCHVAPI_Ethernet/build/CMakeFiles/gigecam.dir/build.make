@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI
+CMAKE_SOURCE_DIR = /home/nxb/gigecam_linux/CCHVAPI_Ethernet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build
+CMAKE_BINARY_DIR = /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gigecam.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/gigecam.dir/flags.make
 
 CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o: CMakeFiles/gigecam.dir/flags.make
 CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o: ../DeviceGVCP.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o -c /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/DeviceGVCP.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/DeviceGVCP.cpp
 
 CMakeFiles/gigecam.dir/DeviceGVCP.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gigecam.dir/DeviceGVCP.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/DeviceGVCP.cpp > CMakeFiles/gigecam.dir/DeviceGVCP.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/gigecam_linux/CCHVAPI_Ethernet/DeviceGVCP.cpp > CMakeFiles/gigecam.dir/DeviceGVCP.cpp.i
 
 CMakeFiles/gigecam.dir/DeviceGVCP.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gigecam.dir/DeviceGVCP.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/DeviceGVCP.cpp -o CMakeFiles/gigecam.dir/DeviceGVCP.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/gigecam_linux/CCHVAPI_Ethernet/DeviceGVCP.cpp -o CMakeFiles/gigecam.dir/DeviceGVCP.cpp.s
 
 CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o.requires:
 .PHONY : CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o.provides.build: CMakeFiles/gigecam.dir/D
 
 CMakeFiles/gigecam.dir/CCHVAPI.cpp.o: CMakeFiles/gigecam.dir/flags.make
 CMakeFiles/gigecam.dir/CCHVAPI.cpp.o: ../CCHVAPI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/gigecam.dir/CCHVAPI.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/CCHVAPI.cpp.o -c /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/CCHVAPI.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/CCHVAPI.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/CCHVAPI.cpp
 
 CMakeFiles/gigecam.dir/CCHVAPI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gigecam.dir/CCHVAPI.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/CCHVAPI.cpp > CMakeFiles/gigecam.dir/CCHVAPI.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/gigecam_linux/CCHVAPI_Ethernet/CCHVAPI.cpp > CMakeFiles/gigecam.dir/CCHVAPI.cpp.i
 
 CMakeFiles/gigecam.dir/CCHVAPI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gigecam.dir/CCHVAPI.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/CCHVAPI.cpp -o CMakeFiles/gigecam.dir/CCHVAPI.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/gigecam_linux/CCHVAPI_Ethernet/CCHVAPI.cpp -o CMakeFiles/gigecam.dir/CCHVAPI.cpp.s
 
 CMakeFiles/gigecam.dir/CCHVAPI.cpp.o.requires:
 .PHONY : CMakeFiles/gigecam.dir/CCHVAPI.cpp.o.requires
@@ -97,17 +97,17 @@ CMakeFiles/gigecam.dir/CCHVAPI.cpp.o.provides.build: CMakeFiles/gigecam.dir/CCHV
 
 CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o: CMakeFiles/gigecam.dir/flags.make
 CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o: ../GigEDataProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o -c /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/GigEDataProcess.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEDataProcess.cpp
 
 CMakeFiles/gigecam.dir/GigEDataProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gigecam.dir/GigEDataProcess.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/GigEDataProcess.cpp > CMakeFiles/gigecam.dir/GigEDataProcess.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEDataProcess.cpp > CMakeFiles/gigecam.dir/GigEDataProcess.cpp.i
 
 CMakeFiles/gigecam.dir/GigEDataProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gigecam.dir/GigEDataProcess.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/GigEDataProcess.cpp -o CMakeFiles/gigecam.dir/GigEDataProcess.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEDataProcess.cpp -o CMakeFiles/gigecam.dir/GigEDataProcess.cpp.s
 
 CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o.requires:
 .PHONY : CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o.requires
@@ -118,19 +118,42 @@ CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o.provides: CMakeFiles/gigecam.dir/Gi
 
 CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o.provides.build: CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o
 
+CMakeFiles/gigecam.dir/main.cpp.o: CMakeFiles/gigecam.dir/flags.make
+CMakeFiles/gigecam.dir/main.cpp.o: ../main.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/gigecam.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/main.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/main.cpp
+
+CMakeFiles/gigecam.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gigecam.dir/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/gigecam_linux/CCHVAPI_Ethernet/main.cpp > CMakeFiles/gigecam.dir/main.cpp.i
+
+CMakeFiles/gigecam.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gigecam.dir/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/gigecam_linux/CCHVAPI_Ethernet/main.cpp -o CMakeFiles/gigecam.dir/main.cpp.s
+
+CMakeFiles/gigecam.dir/main.cpp.o.requires:
+.PHONY : CMakeFiles/gigecam.dir/main.cpp.o.requires
+
+CMakeFiles/gigecam.dir/main.cpp.o.provides: CMakeFiles/gigecam.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/gigecam.dir/main.cpp.o.provides
+
+CMakeFiles/gigecam.dir/main.cpp.o.provides.build: CMakeFiles/gigecam.dir/main.cpp.o
+
 CMakeFiles/gigecam.dir/wqueue.cpp.o: CMakeFiles/gigecam.dir/flags.make
 CMakeFiles/gigecam.dir/wqueue.cpp.o: ../wqueue.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/gigecam.dir/wqueue.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/wqueue.cpp.o -c /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/wqueue.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/wqueue.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/wqueue.cpp
 
 CMakeFiles/gigecam.dir/wqueue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gigecam.dir/wqueue.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/wqueue.cpp > CMakeFiles/gigecam.dir/wqueue.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/gigecam_linux/CCHVAPI_Ethernet/wqueue.cpp > CMakeFiles/gigecam.dir/wqueue.cpp.i
 
 CMakeFiles/gigecam.dir/wqueue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gigecam.dir/wqueue.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/wqueue.cpp -o CMakeFiles/gigecam.dir/wqueue.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/gigecam_linux/CCHVAPI_Ethernet/wqueue.cpp -o CMakeFiles/gigecam.dir/wqueue.cpp.s
 
 CMakeFiles/gigecam.dir/wqueue.cpp.o.requires:
 .PHONY : CMakeFiles/gigecam.dir/wqueue.cpp.o.requires
@@ -143,17 +166,17 @@ CMakeFiles/gigecam.dir/wqueue.cpp.o.provides.build: CMakeFiles/gigecam.dir/wqueu
 
 CMakeFiles/gigecam.dir/clientProp.cpp.o: CMakeFiles/gigecam.dir/flags.make
 CMakeFiles/gigecam.dir/clientProp.cpp.o: ../clientProp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/gigecam.dir/clientProp.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/clientProp.cpp.o -c /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/clientProp.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/clientProp.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/clientProp.cpp
 
 CMakeFiles/gigecam.dir/clientProp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gigecam.dir/clientProp.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/clientProp.cpp > CMakeFiles/gigecam.dir/clientProp.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/gigecam_linux/CCHVAPI_Ethernet/clientProp.cpp > CMakeFiles/gigecam.dir/clientProp.cpp.i
 
 CMakeFiles/gigecam.dir/clientProp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gigecam.dir/clientProp.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/clientProp.cpp -o CMakeFiles/gigecam.dir/clientProp.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/gigecam_linux/CCHVAPI_Ethernet/clientProp.cpp -o CMakeFiles/gigecam.dir/clientProp.cpp.s
 
 CMakeFiles/gigecam.dir/clientProp.cpp.o.requires:
 .PHONY : CMakeFiles/gigecam.dir/clientProp.cpp.o.requires
@@ -166,17 +189,17 @@ CMakeFiles/gigecam.dir/clientProp.cpp.o.provides.build: CMakeFiles/gigecam.dir/c
 
 CMakeFiles/gigecam.dir/camProp.cpp.o: CMakeFiles/gigecam.dir/flags.make
 CMakeFiles/gigecam.dir/camProp.cpp.o: ../camProp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/gigecam.dir/camProp.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/camProp.cpp.o -c /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/camProp.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/camProp.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/camProp.cpp
 
 CMakeFiles/gigecam.dir/camProp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gigecam.dir/camProp.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/camProp.cpp > CMakeFiles/gigecam.dir/camProp.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/gigecam_linux/CCHVAPI_Ethernet/camProp.cpp > CMakeFiles/gigecam.dir/camProp.cpp.i
 
 CMakeFiles/gigecam.dir/camProp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gigecam.dir/camProp.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/camProp.cpp -o CMakeFiles/gigecam.dir/camProp.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/gigecam_linux/CCHVAPI_Ethernet/camProp.cpp -o CMakeFiles/gigecam.dir/camProp.cpp.s
 
 CMakeFiles/gigecam.dir/camProp.cpp.o.requires:
 .PHONY : CMakeFiles/gigecam.dir/camProp.cpp.o.requires
@@ -187,19 +210,42 @@ CMakeFiles/gigecam.dir/camProp.cpp.o.provides: CMakeFiles/gigecam.dir/camProp.cp
 
 CMakeFiles/gigecam.dir/camProp.cpp.o.provides.build: CMakeFiles/gigecam.dir/camProp.cpp.o
 
+CMakeFiles/gigecam.dir/checkCaiqi.cpp.o: CMakeFiles/gigecam.dir/flags.make
+CMakeFiles/gigecam.dir/checkCaiqi.cpp.o: ../checkCaiqi.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/gigecam.dir/checkCaiqi.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/checkCaiqi.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.cpp
+
+CMakeFiles/gigecam.dir/checkCaiqi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gigecam.dir/checkCaiqi.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.cpp > CMakeFiles/gigecam.dir/checkCaiqi.cpp.i
+
+CMakeFiles/gigecam.dir/checkCaiqi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gigecam.dir/checkCaiqi.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/gigecam_linux/CCHVAPI_Ethernet/checkCaiqi.cpp -o CMakeFiles/gigecam.dir/checkCaiqi.cpp.s
+
+CMakeFiles/gigecam.dir/checkCaiqi.cpp.o.requires:
+.PHONY : CMakeFiles/gigecam.dir/checkCaiqi.cpp.o.requires
+
+CMakeFiles/gigecam.dir/checkCaiqi.cpp.o.provides: CMakeFiles/gigecam.dir/checkCaiqi.cpp.o.requires
+	$(MAKE) -f CMakeFiles/gigecam.dir/build.make CMakeFiles/gigecam.dir/checkCaiqi.cpp.o.provides.build
+.PHONY : CMakeFiles/gigecam.dir/checkCaiqi.cpp.o.provides
+
+CMakeFiles/gigecam.dir/checkCaiqi.cpp.o.provides.build: CMakeFiles/gigecam.dir/checkCaiqi.cpp.o
+
 CMakeFiles/gigecam.dir/TrigImgPack.cpp.o: CMakeFiles/gigecam.dir/flags.make
 CMakeFiles/gigecam.dir/TrigImgPack.cpp.o: ../TrigImgPack.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/gigecam.dir/TrigImgPack.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/TrigImgPack.cpp.o -c /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/TrigImgPack.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/TrigImgPack.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/TrigImgPack.cpp
 
 CMakeFiles/gigecam.dir/TrigImgPack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gigecam.dir/TrigImgPack.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/TrigImgPack.cpp > CMakeFiles/gigecam.dir/TrigImgPack.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/gigecam_linux/CCHVAPI_Ethernet/TrigImgPack.cpp > CMakeFiles/gigecam.dir/TrigImgPack.cpp.i
 
 CMakeFiles/gigecam.dir/TrigImgPack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gigecam.dir/TrigImgPack.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/TrigImgPack.cpp -o CMakeFiles/gigecam.dir/TrigImgPack.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/gigecam_linux/CCHVAPI_Ethernet/TrigImgPack.cpp -o CMakeFiles/gigecam.dir/TrigImgPack.cpp.s
 
 CMakeFiles/gigecam.dir/TrigImgPack.cpp.o.requires:
 .PHONY : CMakeFiles/gigecam.dir/TrigImgPack.cpp.o.requires
@@ -212,17 +258,17 @@ CMakeFiles/gigecam.dir/TrigImgPack.cpp.o.provides.build: CMakeFiles/gigecam.dir/
 
 CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o: CMakeFiles/gigecam.dir/flags.make
 CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o: ../GigEDataCapture.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o -c /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/GigEDataCapture.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o -c /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEDataCapture.cpp
 
 CMakeFiles/gigecam.dir/GigEDataCapture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gigecam.dir/GigEDataCapture.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/GigEDataCapture.cpp > CMakeFiles/gigecam.dir/GigEDataCapture.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEDataCapture.cpp > CMakeFiles/gigecam.dir/GigEDataCapture.cpp.i
 
 CMakeFiles/gigecam.dir/GigEDataCapture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gigecam.dir/GigEDataCapture.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/GigEDataCapture.cpp -o CMakeFiles/gigecam.dir/GigEDataCapture.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/gigecam_linux/CCHVAPI_Ethernet/GigEDataCapture.cpp -o CMakeFiles/gigecam.dir/GigEDataCapture.cpp.s
 
 CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o.requires:
 .PHONY : CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o.requires
@@ -238,9 +284,11 @@ gigecam_OBJECTS = \
 "CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o" \
 "CMakeFiles/gigecam.dir/CCHVAPI.cpp.o" \
 "CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o" \
+"CMakeFiles/gigecam.dir/main.cpp.o" \
 "CMakeFiles/gigecam.dir/wqueue.cpp.o" \
 "CMakeFiles/gigecam.dir/clientProp.cpp.o" \
 "CMakeFiles/gigecam.dir/camProp.cpp.o" \
+"CMakeFiles/gigecam.dir/checkCaiqi.cpp.o" \
 "CMakeFiles/gigecam.dir/TrigImgPack.cpp.o" \
 "CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o"
 
@@ -250,9 +298,11 @@ gigecam_EXTERNAL_OBJECTS =
 libgigecam.so: CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o
 libgigecam.so: CMakeFiles/gigecam.dir/CCHVAPI.cpp.o
 libgigecam.so: CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o
+libgigecam.so: CMakeFiles/gigecam.dir/main.cpp.o
 libgigecam.so: CMakeFiles/gigecam.dir/wqueue.cpp.o
 libgigecam.so: CMakeFiles/gigecam.dir/clientProp.cpp.o
 libgigecam.so: CMakeFiles/gigecam.dir/camProp.cpp.o
+libgigecam.so: CMakeFiles/gigecam.dir/checkCaiqi.cpp.o
 libgigecam.so: CMakeFiles/gigecam.dir/TrigImgPack.cpp.o
 libgigecam.so: CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o
 libgigecam.so: CMakeFiles/gigecam.dir/build.make
@@ -267,9 +317,11 @@ CMakeFiles/gigecam.dir/build: libgigecam.so
 CMakeFiles/gigecam.dir/requires: CMakeFiles/gigecam.dir/DeviceGVCP.cpp.o.requires
 CMakeFiles/gigecam.dir/requires: CMakeFiles/gigecam.dir/CCHVAPI.cpp.o.requires
 CMakeFiles/gigecam.dir/requires: CMakeFiles/gigecam.dir/GigEDataProcess.cpp.o.requires
+CMakeFiles/gigecam.dir/requires: CMakeFiles/gigecam.dir/main.cpp.o.requires
 CMakeFiles/gigecam.dir/requires: CMakeFiles/gigecam.dir/wqueue.cpp.o.requires
 CMakeFiles/gigecam.dir/requires: CMakeFiles/gigecam.dir/clientProp.cpp.o.requires
 CMakeFiles/gigecam.dir/requires: CMakeFiles/gigecam.dir/camProp.cpp.o.requires
+CMakeFiles/gigecam.dir/requires: CMakeFiles/gigecam.dir/checkCaiqi.cpp.o.requires
 CMakeFiles/gigecam.dir/requires: CMakeFiles/gigecam.dir/TrigImgPack.cpp.o.requires
 CMakeFiles/gigecam.dir/requires: CMakeFiles/gigecam.dir/GigEDataCapture.cpp.o.requires
 .PHONY : CMakeFiles/gigecam.dir/requires
@@ -279,6 +331,6 @@ CMakeFiles/gigecam.dir/clean:
 .PHONY : CMakeFiles/gigecam.dir/clean
 
 CMakeFiles/gigecam.dir/depend:
-	cd /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build /home/nxb/kenbang/CCHVAPI_Ethernet/CCHVAPI/build/CMakeFiles/gigecam.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nxb/gigecam_linux/CCHVAPI_Ethernet /home/nxb/gigecam_linux/CCHVAPI_Ethernet /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build /home/nxb/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/gigecam.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/gigecam.dir/depend
 
