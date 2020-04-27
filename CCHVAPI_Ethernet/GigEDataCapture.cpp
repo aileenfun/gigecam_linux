@@ -52,8 +52,8 @@ int GigECDataCapture::Open(int height, int width)//
 #else
 	g_width = width;
 #endif
-	TOTALPACK = height*width / 8176 + 1;
-	residue = (height*width) % 8176;//residue//8192-16
+	TOTALPACK = height*width / PAYLOADSIZE + 1;
+	residue = (height*width) % PAYLOADSIZE;//residue//8192-16
 	if (residue > 0)
 	{
 		TOTALPACK++;
@@ -185,7 +185,7 @@ int GigECDataCapture::initUDP(int *s)
 	int timeout = 100;
 	if (setsockopt(socketSrv, SOL_SOCKET, SO_RCVTIMEO, (char*)&timeout, sizeof(tv_out)) == -1)
 	{
-		printf("set timeout error");
+		printf("set timeout error\n");
 		//exit(EXIT_FAILURE);
 	}
 	*s = socketSrv;
@@ -411,13 +411,8 @@ void GigECDataCapture::pack2FrameThreadFunc()
 	long timestamp;
 	haveerror = 0;
 	f_errorpack = 0;
-	//while(!nRet&&m_bCapture)
-	//{
-	//	nRet=getData(m_pInData,0,ReadDataBytes);
-	//	//usleep(1);
-	//}
-
-	//m_queue.setlimit(30);
+	int rowSize = 0;
+	int columnSize = 0;
 	while (m_bCapture)
 	{
 
@@ -458,13 +453,29 @@ void GigECDataCapture::pack2FrameThreadFunc()
 
 			unsigned char pack1 = this_udp_pack->packbuffer[0];
 			unsigned char pack2 = this_udp_pack->packbuffer[1];
-			unsigned char whdebug = this_udp_pack->packbuffer[6];
-			unsigned char wldebug = this_udp_pack->packbuffer[7];
-			unsigned char hhdebug = this_udp_pack->packbuffer[8];
-			unsigned char hldebug = this_udp_pack->packbuffer[9];
+			
+			columnSize = this_udp_pack->packbuffer[6] << 8;
+			columnSize += this_udp_pack->packbuffer[7];
+			rowSize = this_udp_pack->packbuffer[8] << 8;
+			rowSize += this_udp_pack->packbuffer[9];
+			TOTALPACK = (columnSize * rowSize) / PAYLOADSIZE + 1;
+			residue = (columnSize * rowSize) % PAYLOADSIZE;//residue//8192-16
+			if (residue > 0)
+			{
+				TOTALPACK++;
+			}
+			packnum = this_udp_pack->packbuffer[10] << 8;
+			packnum += (unsigned int)this_udp_pack->packbuffer[11];
+			if (packnum > TOTALPACK)
+			{
+				haveerror++;
+				f_errorpack = true;
+				goto CLEANUP;
+			}
+			
 			if (camNum != camNum_last || timestamp != timestamp_last)
 			{//new frame arrived, judged by camNum and timestamp
-				thisImgFrame = new GigEimgFrame(g_width, g_height, camNum);
+				thisImgFrame = new GigEimgFrame(columnSize, rowSize, camNum);
 				thisImgFrame->timestamp = timestamp;
 				thisImgFrame->TrigSource = this_udp_pack->packbuffer[2];;
 				thisImgFrame->packnum = 0;
@@ -481,7 +492,19 @@ void GigECDataCapture::pack2FrameThreadFunc()
 			timestamp = this_udp_pack->packbuffer[3] << 16;
 			timestamp += this_udp_pack->packbuffer[4] << 8;
 			timestamp += this_udp_pack->packbuffer[5];
+			
+			columnSize = this_udp_pack->packbuffer[6] << 8;
+			columnSize += this_udp_pack->packbuffer[7];
+			rowSize = this_udp_pack->packbuffer[8] << 8;
+			rowSize += this_udp_pack->packbuffer[9];
 
+			TOTALPACK = (columnSize * rowSize) / PAYLOADSIZE + 1;
+			residue = (columnSize * rowSize) % PAYLOADSIZE;//residue//8192-16
+			if (residue > 0)
+			{
+				TOTALPACK++;
+			}
+			
 			packnum = this_udp_pack->packbuffer[10] << 8;
 			packnum += (unsigned int)this_udp_pack->packbuffer[11];
 

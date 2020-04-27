@@ -144,9 +144,6 @@ GigeCamAPI_BINARY_DIR:STATIC=/home/alan/gigecam_linux/CCHVAPI_Ethernet/build
 //Value Computed by CMake
 GigeCamAPI_SOURCE_DIR:STATIC=/home/alan/gigecam_linux/CCHVAPI_Ethernet
 
-//Dependencies for the target
-checkCaiqi_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_highgui;general;pthread;
-
 
 ########################
 # INTERNAL cache entries

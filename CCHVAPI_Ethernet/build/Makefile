@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testCheckCaiqi
+# Target rules for targets named discovery
 
 # Build rule for target.
-testCheckCaiqi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testCheckCaiqi
-.PHONY : testCheckCaiqi
+discovery: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 discovery
+.PHONY : discovery
 
 # fast build rule for target.
-testCheckCaiqi/fast:
-	$(MAKE) -f CMakeFiles/testCheckCaiqi.dir/build.make CMakeFiles/testCheckCaiqi.dir/build
-.PHONY : testCheckCaiqi/fast
-
-#=============================================================================
-# Target rules for targets named checkCaiqi
-
-# Build rule for target.
-checkCaiqi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 checkCaiqi
-.PHONY : checkCaiqi
-
-# fast build rule for target.
-checkCaiqi/fast:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/build
-.PHONY : checkCaiqi/fast
+discovery/fast:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/build
+.PHONY : discovery/fast
 
 CCHVAPI.o: CCHVAPI.cpp.o
 
@@ -142,7 +129,7 @@ CCHVAPI.o: CCHVAPI.cpp.o
 
 # target to build an object file
 CCHVAPI.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/CCHVAPI.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/CCHVAPI.cpp.o
 .PHONY : CCHVAPI.cpp.o
 
 CCHVAPI.i: CCHVAPI.cpp.i
@@ -151,7 +138,7 @@ CCHVAPI.i: CCHVAPI.cpp.i
 
 # target to preprocess a source file
 CCHVAPI.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/CCHVAPI.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/CCHVAPI.cpp.i
 .PHONY : CCHVAPI.cpp.i
 
 CCHVAPI.s: CCHVAPI.cpp.s
@@ -160,7 +147,7 @@ CCHVAPI.s: CCHVAPI.cpp.s
 
 # target to generate assembly for a file
 CCHVAPI.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/CCHVAPI.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/CCHVAPI.cpp.s
 .PHONY : CCHVAPI.cpp.s
 
 DeviceGVCP.o: DeviceGVCP.cpp.o
@@ -169,7 +156,7 @@ DeviceGVCP.o: DeviceGVCP.cpp.o
 
 # target to build an object file
 DeviceGVCP.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/DeviceGVCP.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/DeviceGVCP.cpp.o
 .PHONY : DeviceGVCP.cpp.o
 
 DeviceGVCP.i: DeviceGVCP.cpp.i
@@ -178,7 +165,7 @@ DeviceGVCP.i: DeviceGVCP.cpp.i
 
 # target to preprocess a source file
 DeviceGVCP.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/DeviceGVCP.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/DeviceGVCP.cpp.i
 .PHONY : DeviceGVCP.cpp.i
 
 DeviceGVCP.s: DeviceGVCP.cpp.s
@@ -187,7 +174,7 @@ DeviceGVCP.s: DeviceGVCP.cpp.s
 
 # target to generate assembly for a file
 DeviceGVCP.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/DeviceGVCP.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/DeviceGVCP.cpp.s
 .PHONY : DeviceGVCP.cpp.s
 
 GigEDataCapture.o: GigEDataCapture.cpp.o
@@ -196,7 +183,7 @@ GigEDataCapture.o: GigEDataCapture.cpp.o
 
 # target to build an object file
 GigEDataCapture.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/GigEDataCapture.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataCapture.cpp.o
 .PHONY : GigEDataCapture.cpp.o
 
 GigEDataCapture.i: GigEDataCapture.cpp.i
@@ -205,7 +192,7 @@ GigEDataCapture.i: GigEDataCapture.cpp.i
 
 # target to preprocess a source file
 GigEDataCapture.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/GigEDataCapture.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataCapture.cpp.i
 .PHONY : GigEDataCapture.cpp.i
 
 GigEDataCapture.s: GigEDataCapture.cpp.s
@@ -214,7 +201,7 @@ GigEDataCapture.s: GigEDataCapture.cpp.s
 
 # target to generate assembly for a file
 GigEDataCapture.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/GigEDataCapture.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataCapture.cpp.s
 .PHONY : GigEDataCapture.cpp.s
 
 GigEDataProcess.o: GigEDataProcess.cpp.o
@@ -223,7 +210,7 @@ GigEDataProcess.o: GigEDataProcess.cpp.o
 
 # target to build an object file
 GigEDataProcess.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/GigEDataProcess.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataProcess.cpp.o
 .PHONY : GigEDataProcess.cpp.o
 
 GigEDataProcess.i: GigEDataProcess.cpp.i
@@ -232,7 +219,7 @@ GigEDataProcess.i: GigEDataProcess.cpp.i
 
 # target to preprocess a source file
 GigEDataProcess.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/GigEDataProcess.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataProcess.cpp.i
 .PHONY : GigEDataProcess.cpp.i
 
 GigEDataProcess.s: GigEDataProcess.cpp.s
@@ -241,7 +228,7 @@ GigEDataProcess.s: GigEDataProcess.cpp.s
 
 # target to generate assembly for a file
 GigEDataProcess.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/GigEDataProcess.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/GigEDataProcess.cpp.s
 .PHONY : GigEDataProcess.cpp.s
 
 Inc/MV_CrossPlatform/Linux_Thread.o: Inc/MV_CrossPlatform/Linux_Thread.cpp.o
@@ -250,7 +237,7 @@ Inc/MV_CrossPlatform/Linux_Thread.o: Inc/MV_CrossPlatform/Linux_Thread.cpp.o
 
 # target to build an object file
 Inc/MV_CrossPlatform/Linux_Thread.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.o
 .PHONY : Inc/MV_CrossPlatform/Linux_Thread.cpp.o
 
 Inc/MV_CrossPlatform/Linux_Thread.i: Inc/MV_CrossPlatform/Linux_Thread.cpp.i
@@ -259,7 +246,7 @@ Inc/MV_CrossPlatform/Linux_Thread.i: Inc/MV_CrossPlatform/Linux_Thread.cpp.i
 
 # target to preprocess a source file
 Inc/MV_CrossPlatform/Linux_Thread.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.i
 .PHONY : Inc/MV_CrossPlatform/Linux_Thread.cpp.i
 
 Inc/MV_CrossPlatform/Linux_Thread.s: Inc/MV_CrossPlatform/Linux_Thread.cpp.s
@@ -268,7 +255,7 @@ Inc/MV_CrossPlatform/Linux_Thread.s: Inc/MV_CrossPlatform/Linux_Thread.cpp.s
 
 # target to generate assembly for a file
 Inc/MV_CrossPlatform/Linux_Thread.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Linux_Thread.cpp.s
 .PHONY : Inc/MV_CrossPlatform/Linux_Thread.cpp.s
 
 Inc/MV_CrossPlatform/MV_Log.o: Inc/MV_CrossPlatform/MV_Log.cpp.o
@@ -277,7 +264,7 @@ Inc/MV_CrossPlatform/MV_Log.o: Inc/MV_CrossPlatform/MV_Log.cpp.o
 
 # target to build an object file
 Inc/MV_CrossPlatform/MV_Log.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Log.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Log.cpp.o
 .PHONY : Inc/MV_CrossPlatform/MV_Log.cpp.o
 
 Inc/MV_CrossPlatform/MV_Log.i: Inc/MV_CrossPlatform/MV_Log.cpp.i
@@ -286,7 +273,7 @@ Inc/MV_CrossPlatform/MV_Log.i: Inc/MV_CrossPlatform/MV_Log.cpp.i
 
 # target to preprocess a source file
 Inc/MV_CrossPlatform/MV_Log.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Log.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Log.cpp.i
 .PHONY : Inc/MV_CrossPlatform/MV_Log.cpp.i
 
 Inc/MV_CrossPlatform/MV_Log.s: Inc/MV_CrossPlatform/MV_Log.cpp.s
@@ -295,7 +282,7 @@ Inc/MV_CrossPlatform/MV_Log.s: Inc/MV_CrossPlatform/MV_Log.cpp.s
 
 # target to generate assembly for a file
 Inc/MV_CrossPlatform/MV_Log.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Log.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Log.cpp.s
 .PHONY : Inc/MV_CrossPlatform/MV_Log.cpp.s
 
 Inc/MV_CrossPlatform/MV_Memory.o: Inc/MV_CrossPlatform/MV_Memory.cpp.o
@@ -304,7 +291,7 @@ Inc/MV_CrossPlatform/MV_Memory.o: Inc/MV_CrossPlatform/MV_Memory.cpp.o
 
 # target to build an object file
 Inc/MV_CrossPlatform/MV_Memory.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.o
 .PHONY : Inc/MV_CrossPlatform/MV_Memory.cpp.o
 
 Inc/MV_CrossPlatform/MV_Memory.i: Inc/MV_CrossPlatform/MV_Memory.cpp.i
@@ -313,7 +300,7 @@ Inc/MV_CrossPlatform/MV_Memory.i: Inc/MV_CrossPlatform/MV_Memory.cpp.i
 
 # target to preprocess a source file
 Inc/MV_CrossPlatform/MV_Memory.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.i
 .PHONY : Inc/MV_CrossPlatform/MV_Memory.cpp.i
 
 Inc/MV_CrossPlatform/MV_Memory.s: Inc/MV_CrossPlatform/MV_Memory.cpp.s
@@ -322,7 +309,7 @@ Inc/MV_CrossPlatform/MV_Memory.s: Inc/MV_CrossPlatform/MV_Memory.cpp.s
 
 # target to generate assembly for a file
 Inc/MV_CrossPlatform/MV_Memory.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Memory.cpp.s
 .PHONY : Inc/MV_CrossPlatform/MV_Memory.cpp.s
 
 Inc/MV_CrossPlatform/MV_Thread.o: Inc/MV_CrossPlatform/MV_Thread.cpp.o
@@ -331,7 +318,7 @@ Inc/MV_CrossPlatform/MV_Thread.o: Inc/MV_CrossPlatform/MV_Thread.cpp.o
 
 # target to build an object file
 Inc/MV_CrossPlatform/MV_Thread.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.o
 .PHONY : Inc/MV_CrossPlatform/MV_Thread.cpp.o
 
 Inc/MV_CrossPlatform/MV_Thread.i: Inc/MV_CrossPlatform/MV_Thread.cpp.i
@@ -340,7 +327,7 @@ Inc/MV_CrossPlatform/MV_Thread.i: Inc/MV_CrossPlatform/MV_Thread.cpp.i
 
 # target to preprocess a source file
 Inc/MV_CrossPlatform/MV_Thread.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.i
 .PHONY : Inc/MV_CrossPlatform/MV_Thread.cpp.i
 
 Inc/MV_CrossPlatform/MV_Thread.s: Inc/MV_CrossPlatform/MV_Thread.cpp.s
@@ -349,7 +336,7 @@ Inc/MV_CrossPlatform/MV_Thread.s: Inc/MV_CrossPlatform/MV_Thread.cpp.s
 
 # target to generate assembly for a file
 Inc/MV_CrossPlatform/MV_Thread.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Thread.cpp.s
 .PHONY : Inc/MV_CrossPlatform/MV_Thread.cpp.s
 
 Inc/MV_CrossPlatform/MV_Tools.o: Inc/MV_CrossPlatform/MV_Tools.cpp.o
@@ -358,7 +345,7 @@ Inc/MV_CrossPlatform/MV_Tools.o: Inc/MV_CrossPlatform/MV_Tools.cpp.o
 
 # target to build an object file
 Inc/MV_CrossPlatform/MV_Tools.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.o
 .PHONY : Inc/MV_CrossPlatform/MV_Tools.cpp.o
 
 Inc/MV_CrossPlatform/MV_Tools.i: Inc/MV_CrossPlatform/MV_Tools.cpp.i
@@ -367,7 +354,7 @@ Inc/MV_CrossPlatform/MV_Tools.i: Inc/MV_CrossPlatform/MV_Tools.cpp.i
 
 # target to preprocess a source file
 Inc/MV_CrossPlatform/MV_Tools.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.i
 .PHONY : Inc/MV_CrossPlatform/MV_Tools.cpp.i
 
 Inc/MV_CrossPlatform/MV_Tools.s: Inc/MV_CrossPlatform/MV_Tools.cpp.s
@@ -376,7 +363,7 @@ Inc/MV_CrossPlatform/MV_Tools.s: Inc/MV_CrossPlatform/MV_Tools.cpp.s
 
 # target to generate assembly for a file
 Inc/MV_CrossPlatform/MV_Tools.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/MV_Tools.cpp.s
 .PHONY : Inc/MV_CrossPlatform/MV_Tools.cpp.s
 
 Inc/MV_CrossPlatform/Windows_Thread.o: Inc/MV_CrossPlatform/Windows_Thread.cpp.o
@@ -385,7 +372,7 @@ Inc/MV_CrossPlatform/Windows_Thread.o: Inc/MV_CrossPlatform/Windows_Thread.cpp.o
 
 # target to build an object file
 Inc/MV_CrossPlatform/Windows_Thread.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.o
 .PHONY : Inc/MV_CrossPlatform/Windows_Thread.cpp.o
 
 Inc/MV_CrossPlatform/Windows_Thread.i: Inc/MV_CrossPlatform/Windows_Thread.cpp.i
@@ -394,7 +381,7 @@ Inc/MV_CrossPlatform/Windows_Thread.i: Inc/MV_CrossPlatform/Windows_Thread.cpp.i
 
 # target to preprocess a source file
 Inc/MV_CrossPlatform/Windows_Thread.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.i
 .PHONY : Inc/MV_CrossPlatform/Windows_Thread.cpp.i
 
 Inc/MV_CrossPlatform/Windows_Thread.s: Inc/MV_CrossPlatform/Windows_Thread.cpp.s
@@ -403,7 +390,7 @@ Inc/MV_CrossPlatform/Windows_Thread.s: Inc/MV_CrossPlatform/Windows_Thread.cpp.s
 
 # target to generate assembly for a file
 Inc/MV_CrossPlatform/Windows_Thread.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/MV_CrossPlatform/Windows_Thread.cpp.s
 .PHONY : Inc/MV_CrossPlatform/Windows_Thread.cpp.s
 
 Inc/Socket/Socket.o: Inc/Socket/Socket.cpp.o
@@ -412,7 +399,7 @@ Inc/Socket/Socket.o: Inc/Socket/Socket.cpp.o
 
 # target to build an object file
 Inc/Socket/Socket.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/Socket/Socket.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.o
 .PHONY : Inc/Socket/Socket.cpp.o
 
 Inc/Socket/Socket.i: Inc/Socket/Socket.cpp.i
@@ -421,7 +408,7 @@ Inc/Socket/Socket.i: Inc/Socket/Socket.cpp.i
 
 # target to preprocess a source file
 Inc/Socket/Socket.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/Socket/Socket.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.i
 .PHONY : Inc/Socket/Socket.cpp.i
 
 Inc/Socket/Socket.s: Inc/Socket/Socket.cpp.s
@@ -430,7 +417,7 @@ Inc/Socket/Socket.s: Inc/Socket/Socket.cpp.s
 
 # target to generate assembly for a file
 Inc/Socket/Socket.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/Inc/Socket/Socket.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/Inc/Socket/Socket.cpp.s
 .PHONY : Inc/Socket/Socket.cpp.s
 
 TrigImgPack.o: TrigImgPack.cpp.o
@@ -439,7 +426,7 @@ TrigImgPack.o: TrigImgPack.cpp.o
 
 # target to build an object file
 TrigImgPack.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/TrigImgPack.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/TrigImgPack.cpp.o
 .PHONY : TrigImgPack.cpp.o
 
 TrigImgPack.i: TrigImgPack.cpp.i
@@ -448,7 +435,7 @@ TrigImgPack.i: TrigImgPack.cpp.i
 
 # target to preprocess a source file
 TrigImgPack.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/TrigImgPack.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/TrigImgPack.cpp.i
 .PHONY : TrigImgPack.cpp.i
 
 TrigImgPack.s: TrigImgPack.cpp.s
@@ -457,7 +444,7 @@ TrigImgPack.s: TrigImgPack.cpp.s
 
 # target to generate assembly for a file
 TrigImgPack.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/TrigImgPack.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/TrigImgPack.cpp.s
 .PHONY : TrigImgPack.cpp.s
 
 camProp.o: camProp.cpp.o
@@ -466,7 +453,7 @@ camProp.o: camProp.cpp.o
 
 # target to build an object file
 camProp.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/camProp.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/camProp.cpp.o
 .PHONY : camProp.cpp.o
 
 camProp.i: camProp.cpp.i
@@ -475,7 +462,7 @@ camProp.i: camProp.cpp.i
 
 # target to preprocess a source file
 camProp.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/camProp.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/camProp.cpp.i
 .PHONY : camProp.cpp.i
 
 camProp.s: camProp.cpp.s
@@ -484,7 +471,7 @@ camProp.s: camProp.cpp.s
 
 # target to generate assembly for a file
 camProp.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/camProp.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/camProp.cpp.s
 .PHONY : camProp.cpp.s
 
 checkCaiqi.o: checkCaiqi.cpp.o
@@ -493,7 +480,7 @@ checkCaiqi.o: checkCaiqi.cpp.o
 
 # target to build an object file
 checkCaiqi.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/checkCaiqi.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/checkCaiqi.cpp.o
 .PHONY : checkCaiqi.cpp.o
 
 checkCaiqi.i: checkCaiqi.cpp.i
@@ -502,7 +489,7 @@ checkCaiqi.i: checkCaiqi.cpp.i
 
 # target to preprocess a source file
 checkCaiqi.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/checkCaiqi.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/checkCaiqi.cpp.i
 .PHONY : checkCaiqi.cpp.i
 
 checkCaiqi.s: checkCaiqi.cpp.s
@@ -511,7 +498,7 @@ checkCaiqi.s: checkCaiqi.cpp.s
 
 # target to generate assembly for a file
 checkCaiqi.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/checkCaiqi.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/checkCaiqi.cpp.s
 .PHONY : checkCaiqi.cpp.s
 
 clientProp.o: clientProp.cpp.o
@@ -520,7 +507,7 @@ clientProp.o: clientProp.cpp.o
 
 # target to build an object file
 clientProp.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/clientProp.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/clientProp.cpp.o
 .PHONY : clientProp.cpp.o
 
 clientProp.i: clientProp.cpp.i
@@ -529,7 +516,7 @@ clientProp.i: clientProp.cpp.i
 
 # target to preprocess a source file
 clientProp.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/clientProp.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/clientProp.cpp.i
 .PHONY : clientProp.cpp.i
 
 clientProp.s: clientProp.cpp.s
@@ -538,8 +525,35 @@ clientProp.s: clientProp.cpp.s
 
 # target to generate assembly for a file
 clientProp.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/clientProp.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/clientProp.cpp.s
 .PHONY : clientProp.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 testCheckCaiqi.o: testCheckCaiqi.cpp.o
 
@@ -547,8 +561,7 @@ testCheckCaiqi.o: testCheckCaiqi.cpp.o
 
 # target to build an object file
 testCheckCaiqi.cpp.o:
-	$(MAKE) -f CMakeFiles/testCheckCaiqi.dir/build.make CMakeFiles/testCheckCaiqi.dir/testCheckCaiqi.cpp.o
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/testCheckCaiqi.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/testCheckCaiqi.cpp.o
 .PHONY : testCheckCaiqi.cpp.o
 
 testCheckCaiqi.i: testCheckCaiqi.cpp.i
@@ -557,8 +570,7 @@ testCheckCaiqi.i: testCheckCaiqi.cpp.i
 
 # target to preprocess a source file
 testCheckCaiqi.cpp.i:
-	$(MAKE) -f CMakeFiles/testCheckCaiqi.dir/build.make CMakeFiles/testCheckCaiqi.dir/testCheckCaiqi.cpp.i
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/testCheckCaiqi.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/testCheckCaiqi.cpp.i
 .PHONY : testCheckCaiqi.cpp.i
 
 testCheckCaiqi.s: testCheckCaiqi.cpp.s
@@ -567,8 +579,7 @@ testCheckCaiqi.s: testCheckCaiqi.cpp.s
 
 # target to generate assembly for a file
 testCheckCaiqi.cpp.s:
-	$(MAKE) -f CMakeFiles/testCheckCaiqi.dir/build.make CMakeFiles/testCheckCaiqi.dir/testCheckCaiqi.cpp.s
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/testCheckCaiqi.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/testCheckCaiqi.cpp.s
 .PHONY : testCheckCaiqi.cpp.s
 
 wqueue.o: wqueue.cpp.o
@@ -577,7 +588,7 @@ wqueue.o: wqueue.cpp.o
 
 # target to build an object file
 wqueue.cpp.o:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/wqueue.cpp.o
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/wqueue.cpp.o
 .PHONY : wqueue.cpp.o
 
 wqueue.i: wqueue.cpp.i
@@ -586,7 +597,7 @@ wqueue.i: wqueue.cpp.i
 
 # target to preprocess a source file
 wqueue.cpp.i:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/wqueue.cpp.i
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/wqueue.cpp.i
 .PHONY : wqueue.cpp.i
 
 wqueue.s: wqueue.cpp.s
@@ -595,7 +606,7 @@ wqueue.s: wqueue.cpp.s
 
 # target to generate assembly for a file
 wqueue.cpp.s:
-	$(MAKE) -f CMakeFiles/checkCaiqi.dir/build.make CMakeFiles/checkCaiqi.dir/wqueue.cpp.s
+	$(MAKE) -f CMakeFiles/discovery.dir/build.make CMakeFiles/discovery.dir/wqueue.cpp.s
 .PHONY : wqueue.cpp.s
 
 # Help Target
@@ -605,9 +616,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... testCheckCaiqi"
 	@echo "... rebuild_cache"
-	@echo "... checkCaiqi"
+	@echo "... discovery"
 	@echo "... CCHVAPI.o"
 	@echo "... CCHVAPI.i"
 	@echo "... CCHVAPI.s"
@@ -653,6 +663,9 @@ help:
 	@echo "... clientProp.o"
 	@echo "... clientProp.i"
 	@echo "... clientProp.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... testCheckCaiqi.o"
 	@echo "... testCheckCaiqi.i"
 	@echo "... testCheckCaiqi.s"

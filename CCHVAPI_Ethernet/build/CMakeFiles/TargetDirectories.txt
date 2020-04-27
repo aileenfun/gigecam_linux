@@ -1,4 +1,3 @@
 /home/alan/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/edit_cache.dir
-/home/alan/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/testCheckCaiqi.dir
 /home/alan/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/rebuild_cache.dir
-/home/alan/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/checkCaiqi.dir
+/home/alan/gigecam_linux/CCHVAPI_Ethernet/build/CMakeFiles/discovery.dir

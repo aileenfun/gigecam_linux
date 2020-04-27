@@ -141,13 +141,25 @@ public:
 		sendProp(*devprop);
 		return 1;
 	}
-	int start()
+	int start(int height=0,int width=0)
 	{
 
 		//get height and width from reg
 		//must connected
 		//must know ip address from GVCP, read reg
 		//send prop
+		int h, w;
+		if (width == 0)
+		{
+			h = devprop->height;
+			w = devprop->width;
+		}
+		else
+		{
+			h = height;
+			w = width;
+		}
+		
 		if(b_opened)
 		{
 			return 0;
@@ -159,8 +171,8 @@ public:
 		}
 		if(m_pDataCapture->initUDP(&socketSrv))
 		{
-			m_pDataProcess->Open(devprop->height, devprop->width, m_pDataCapture, cb);
-			m_pDataCapture->Open(devprop->height, devprop->width);
+			m_pDataProcess->Open(h, w, m_pDataCapture, cb);
+			m_pDataCapture->Open(h, w);
 			b_opened = true;
 			b_closed = false;
 		}
@@ -365,7 +377,7 @@ public:
 };
  int GigEaddInstance(void *lpUser,LPMV_CALLBACK2 CallBackFunc,CCHCamera *info);
 // int initCCTAPI(int camNum);
- int GigEstartCap(int camNum=1);
+ int GigEstartCap(int height=0,int width=0,int camNum=1);
  int GigEstopCap(int camNum=1);
  int GigEsetMirrorType(GigEDataProcessType mirrortype,int camNum=1);
  int GigEgetFrameCnt(int camNum=1);

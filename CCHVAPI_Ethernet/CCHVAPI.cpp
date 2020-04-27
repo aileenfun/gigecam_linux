@@ -23,14 +23,14 @@ int GigEaddInstance(void *lpUser, LPMV_CALLBACK2 CallBackFunc, CCHCamera *info)
 
 }
 
-int GigEstartCap(int camNum)
+int GigEstartCap(int height,int width,int camNum)
 {
 	if (camNum<1)return camNum;
 	camNum = camNum - 1;
 
 	if (vec_camins[camNum]->b_connected)
 	{
-		return vec_camins[camNum]->start();
+		return vec_camins[camNum]->start(height,width);
 	}
 	return -1;
 }

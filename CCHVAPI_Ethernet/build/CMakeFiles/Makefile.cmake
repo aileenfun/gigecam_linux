@@ -18,6 +18,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.5/Modules/CMakeLanguageInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/share/cmake-3.5/Modules/CMakeUnixFindMake.cmake"
   "/usr/share/cmake-3.5/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake-3.5/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-3.5/Modules/Compiler/GNU.cmake"
@@ -41,6 +42,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/testCheckCaiqi.dir/DependInfo.cmake"
-  "CMakeFiles/checkCaiqi.dir/DependInfo.cmake"
+  "CMakeFiles/discovery.dir/DependInfo.cmake"
   )
