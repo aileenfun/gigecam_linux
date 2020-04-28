@@ -26,9 +26,9 @@ void  RawCallBack(void* lpParam, void* lpUser)
 	if(dispheight==360)
 	{
 		w1=960;
-		h1=320;
-		w2=360;
-		h2=320;
+		h1=360;
+		w2=320;
+		h2=360;
 	}
 	else
 	{
@@ -37,12 +37,11 @@ void  RawCallBack(void* lpParam, void* lpUser)
 		w2=1280;
 		h2=1024;
 	}
-
 	if (imgBuf == NULL)
 	{
 		imgBuf = new byte[fullw*fullh];
 	}
-	if(imgBuf2=NULL)
+	if(imgBuf2==NULL)
 	{
 		imgBuf2=new byte[fullw*fullh];
 	}
@@ -52,7 +51,7 @@ void  RawCallBack(void* lpParam, void* lpUser)
 	cv::Mat frame(h1, w1, CV_8UC1, imgBuf);
 	cv::Mat frame2(h2, w2, CV_8UC1, imgBuf2);
 	cv::imshow("disp", frame);
-	cv::imshow("disp", frame2);
+	cv::imshow("disp2", frame2);
 	cv::waitKey(1);
 }
 /*
@@ -244,6 +243,7 @@ std::string fip="";
 				11:	Force IP\n\
 				12: Set IP\n\
 				13:	Set ROI\n\
+				14: switch ROI\n\
 				\n\
 				\'99\':	Exit\n"\
 				);
@@ -355,7 +355,7 @@ CONNECTCASE:
 			break;
 			
 			case 14:			
-			cout<<"Open ROI? 0 for no, 1 for yes"<<endl;
+			cout<<"Switch ROI? 0 for no, 1 for yes"<<endl;
 			cin>>en;
 			GigEsetROI(0,1279,0,1023,en,board1);
 			break;
